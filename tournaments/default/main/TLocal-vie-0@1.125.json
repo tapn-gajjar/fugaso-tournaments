@@ -1,0 +1,28 @@
+{"frames": {
+
+"trn_vie":
+{
+	"frame": {"x":1,"y":28,"w":158,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":158,"h":42},
+	"sourceSize": {"w":158,"h":42}
+},
+"trn_white_vie":
+{
+	"frame": {"x":1,"y":1,"w":97,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":25},
+	"sourceSize": {"w":97,"h":25}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "TLocal-vie-0@1.125.png",
+	"format": "RGBA8888",
+	"size": {"w":160,"h":71},
+	"scale": "0.75",
+	"smartupdate": "$TexturePacker:SmartUpdate:ad27077f7175b17936e63ebdbb120816:1671c0716d571e5dd54c0f511c0c64f5:e0d357d1be06ab56df2487228c780517$"
+}
+}

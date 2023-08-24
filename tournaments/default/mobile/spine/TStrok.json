@@ -1,0 +1,63 @@
+{
+"skeleton": { "hash": "RK9ZALpI7uE", "spine": "4.1.17", "x": -520.3, "y": -80.31, "width": 1094.3, "height": 418.58 },
+"bones": [
+	{ "name": "root", "x": 28.06, "y": 151.56 },
+	{ "name": "Shine", "parent": "root", "x": 10.68, "y": -46.42 }
+],
+"slots": [
+	{ "name": "Layer 8 copy", "bone": "Shine", "attachment": "Layer 31 copy" },
+	{ "name": "Layer 8 copy 2", "bone": "Shine", "attachment": "Layer 31 copy" },
+	{ "name": "Layer 57", "bone": "Shine", "attachment": "Layer 31 copy" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Layer 8 copy": {
+				"Layer 31 copy": { "x": -14.04, "y": -96.94, "width": 1090, "height": 177 }
+			},
+			"Layer 8 copy 2": {
+				"Layer 31 copy": { "x": -9.74, "y": 144.64, "width": 1090, "height": 177 }
+			},
+			"Layer 57": {
+				"Layer 31 copy": { "x": -12.93, "y": 23.22, "rotation": 180, "width": 1090, "height": 177 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"Layer 8 copy": {
+				"rgba": [
+					{ "color": "ffffffcd" },
+					{ "time": 0.1667, "color": "ffffffff" },
+					{ "time": 0.8333, "color": "ffffff37" },
+					{ "time": 1.5, "color": "ffffffff" },
+					{ "time": 2.1667, "color": "ffffff37" },
+					{ "time": 2.6667, "color": "ffffffcd" }
+				]
+			},
+			"Layer 8 copy 2": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "ffffff37" },
+					{ "time": 1.3333, "color": "ffffffff" },
+					{ "time": 2, "color": "ffffff37" },
+					{ "time": 2.6667, "color": "ffffffff" }
+				]
+			},
+			"Layer 57": {
+				"rgba": [
+					{ "color": "ffffff9b" },
+					{ "time": 0.3333, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff37" },
+					{ "time": 1.6667, "color": "ffffffff" },
+					{ "time": 2.3333, "color": "ffffff37" },
+					{ "time": 2.6667, "color": "ffffff9b" }
+				]
+			}
+		}
+	}
+}
+}

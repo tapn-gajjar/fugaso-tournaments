@@ -1,0 +1,3345 @@
+{
+  "widget":{
+    "x":-19, "y":23, "sdx":0, "sdy":0.5,
+    "m_x":-19, "m_y":27, "m_sdx":0, "m_sdy":0,
+    "v_x":-19, "v_y":711, "v_sdx":0, "v_sdy":0.75,
+    "animate":{
+      "dx0":-115, "dx1":-16,
+      "time0":0.2667, "time1":0.4067, "time2":0.6067
+    },
+    "animate_right":{
+      "dx0":115, "dx1":16,
+      "time0":0.2667, "time1":0.4067, "time2":0.6067
+    },
+    "animate_top":{
+      "dy0":-115, "dy1":-16,
+      "time0":0.2667, "time1":0.4067, "time2":0.6067
+    },
+    "animate_open_panel":0.2,
+    "position":"left",
+    "pos_map":{
+      "left":{"b_widget":{"x":68, "y":52}},
+      "top":{
+        "b_widget":{"x":-52, "y":69, "hintAreaRect":{"x":-52, "y":-70, "width":104, "height":122, "type":0, "debug":0}},
+        "s_bg":{"rotate":90}
+      },
+      "right":{
+        "b_widget":{"x":-68, "y":52, "hintAreaRect":{"x":-68, "y":-53, "width":121, "height":103, "type":0, "debug":0}},
+        "s_bg":{"scaleX":-1}
+      }
+    },
+    "timer_idle":[10, 17], "timer_idle_first":1,
+    "deepPosition":false, "noCheckSize":false,
+    "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+    "type":"container", "name":"c_widget", "debug":0,
+    "entities":[
+      {
+        "x":0, "y":0, "scaleX":1, "rotate":0,
+        "deepPosition":false, "-noCheckSize":true,
+        "type":"sprite", "texture":"vidget/vidget_1",
+        "name":"s_bg", "debug":0
+      },
+      {
+        "x":68, "y":52, "anchor":0.5,
+        "deepPosition":false, "-noCheckSize":true,
+        "out":"4x4", "type":"buttonMobile", "name":"b_widget", "debug":0,
+        "overScale":1.0, "downScale":0.98, "blockAlpha":0.9,
+        "soundUp":"t_btn_any", "soundOver":"btn_over",
+        "entities":[
+          {
+            "x":0, "y":0, "dx":0, "dy":0, "speed":1,
+            "deepPosition":false, "noCheckSize":true,
+            "play":false, "playLoop":false, "destroyOnKill":false,
+            "a_left":"left_right", "a_right":"right_left", "a_top":"top_bottom",
+            "a_over":"highlight", "a_up":"select",
+            "a_wait_1":"simple", "a_wait_2":"soft",
+            "textures":"T_cubе", "custom_a_name":"static", "name":"a_effect",
+            "type":"actorSpine", "debug":0
+          }
+        ],
+        "hintAreaRect":{"x":-68, "y":-53, "width":121, "height":103, "type":0, "debug":0}
+      }
+
+    ]
+  },
+  "panel_widget":{
+    "edit":0,
+    "x":22, "y":12, "sdx":0, "sdy":0.5,
+    "v_x":0, "v_y":0,
+    "deepPosition":false,
+    "type":"container",
+    "animate":{
+      "dx":-250,
+      "time_dx":0.4067, "time_alpha":0.4,
+      "dy_content":-436, "time_dy":0.3
+    },
+
+    "countMax":16,
+    "element":{
+      "x":0, "y":0,
+      "deepPosition":false, "noCheckSize":true,
+      "interactiveChildren":false, "centered":false, "cacheAsBitmap":false,
+      "type":"container", "name":"c_", "debug":0,
+      "user_color":"0xffffff",
+      "entities":[
+        {
+          "x":33, "y":25, "anchor":0.5, "scale":0.52,
+          "deepPosition":false, "noCheckSize":true,
+          "places":{
+            "1":"leaderboard/leaderboard_medal_1",
+            "2":"leaderboard/leaderboard_medal_2",
+            "3":"leaderboard/leaderboard_medal_3",
+            "-":"leaderboard/leaderboard_medal_4"
+          },
+          "type":"sprite", "texture":"leaderboard/leaderboard_medal_1",
+          "name":"s_place", "debug":0,
+          "entities":[
+            {
+              "x":2, "y":-3,
+              "deepPosition":false, "noCheckSize":true,
+              "width":23, "height":19, "align":"center", "alignV":"middle",
+              "font":{"size":13, "name":"t_rules_number_2_font"}, "fill":"0xFFEBD7", "letterSpacing":-2,
+              "checkFontSize":false, "oneLine":true, "toUpperCase":false, "locCheck":false,
+              "text":"4", "type":"textBitmap", "name":"t_number", "debug":0
+            }
+          ]
+        },
+
+        {
+          "x":44, "y":16, "visible":false,
+          "deepPosition":false, "noCheckSize":true,
+          "type":"sprite", "texture":"leaderboard/leaderboard_line",
+          "name":"s_user", "debug":0
+        },
+        {
+          "x":52, "y":25,
+          "deepPosition":false, "noCheckSize":true,
+          "width":77, "height":17, "align":"left", "alignV":"middle",
+          "fontSize":"10px", "fontName":"NimbusFont", "fill":"0x69606A", "letterSpacing":0,
+          "leading":0, "checkFontSize":true, "oneLine":true, "toUpperCase":false,
+          "locCheck":false,
+          "text":"USER-129304556", "type":"textFont", "name":"t_name", "debug":0
+        },
+        {
+          "x":130, "y":23,
+          "deepPosition":false, "noCheckSize":true,
+          "width":42, "height":11, "align":"left", "alignV":"middle",
+          "font":{"size":10, "name":"t_rules_number_1_font"}, "fill":"0x69606A", "letterSpacing":0,
+          "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+          "text":"8.9874", "type":"textBitmap", "name":"t_points", "debug":0
+        },
+
+        {
+          "x":131, "y":32,
+          "deepPosition":false, "noCheckSize":true,
+          "width":42, "height":9, "align":"left", "alignV":"middle",
+          "font":{"size":9, "name":"t_rules1_font"}, "fill":"0x69606A", "letterSpacing":0,
+          "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+          "locConst":"tournament_rules_player_4", "type":"textBitmap", "name":"t_tournament_rules_player_4", "debug":0,
+          "hin":{
+            "y":-2, "x":1,
+            "width":42, "height":10, "align":"left", "alignV":"middle",
+            "fontSize":"9px", "fontName":"Mangal", "fill":"0x69606A", "letterSpacing":0,
+            "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+            "type":"textFont", "debug":0
+          },
+          "locConfig":{
+            "tha":{"dy":0.2, "fontSize":10},
+            "zh_cn":{"dy":0.08},
+            "zh_tw":{"dy":0.08},
+            "jpn":{"dy":0.1},
+            "kor":{"dy":0.08}
+          }
+
+        }
+      ]
+    },
+    "step":25,
+
+    "entities":[
+      {
+        "x":0, "y":0,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"leaderboard/Leaderboard_back_2",
+        "name":"s_Leaderboard_back_2", "debug":0
+      },
+
+      {
+        "x":37, "y":16,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"leaderboard/Leaderboard_back_6",
+        "name":"s_Leaderboard_back_6", "debug":0
+      },
+      {
+        "x":6, "y":85,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"leaderboard/Leaderboard_back_9",
+        "name":"s_Leaderboard_back_9", "debug":0
+      },
+      {
+        "x":160, "y":66, "anchor":0.5,
+        "deepPosition":false, "noCheckSize":true,
+        "out":"leaderboard/b_leaderboard_0", "over":"leaderboard/b_leaderboard_1",
+        "down":"leaderboard/b_leaderboard_2", "block":"leaderboard/b_leaderboard_3",
+        "type":"button", "name":"b_open", "debug":0,
+        "oneClick":true, "soundUp":"t_btn_any", "soundOver":"btn_over",
+        "-hintAreaRect":{"x":0, "y":0, "width":10, "height":10, "type":0, "debug":0}
+      },
+      {
+        "x":32, "y":10,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"leaderboard/Leaderboard_back_5",
+        "name":"s_Leaderboard_back_5", "debug":0
+      },
+      {
+        "x":25, "y":46,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"leaderboard/Leaderboard_back_8",
+        "name":"s_Leaderboard_back_8", "debug":0
+      },
+      {
+        "x":50, "y":27,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"leaderboard/Leaderboard_back_7",
+        "name":"s_Leaderboard_back_7", "debug":0
+      },
+
+      {
+        "x":91, "y":118, "anchor":0.5,
+        "deepPosition":false, "noCheckSize":true,
+        "out":"leaderboard/b_leaderboard_small_0", "over":"leaderboard/b_leaderboard_small_1",
+        "down":"leaderboard/b_leaderboard_small_2", "block":"leaderboard/b_leaderboard_small_3",
+        "type":"button", "name":"b_close", "debug":0,
+        "oneClick":true, "soundUp":"t_btn_any", "soundOver":"btn_over",
+        "-hintAreaRect":{"x":0, "y":0, "width":10, "height":10, "type":0, "debug":0}
+      },
+      {
+        "x":0, "y":0,
+        "deepPosition":false, "noCheckSize":true,
+        "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_content", "debug":0,
+        "entities":[
+          {
+            "x":0, "y":165,
+            "deepPosition":false, "noCheckSize":true,
+            "type":"sprite", "texture":"leaderboard/Leaderboard_back_1",
+            "name":"s_Leaderboard_back_1", "debug":0
+          },
+          {
+            "x":-3, "y":171,
+            "deepPosition":false, "noCheckSize":true,
+            "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+            "type":"container", "name":"c_players", "debug":0
+          }
+        ]
+      },
+      {
+        "x":-2, "y":164,
+        "width":187, "height":443,
+        "color":"0x000000", "alpha":1,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"rect", "name":"r_mask", "debug":0
+      },
+
+      {
+        "x":77, "y":356, "dx":0, "dy":0, "speed":1, "scale":0.66,
+        "deepPosition":false, "noCheckSize":true,
+        "play":false, "playLoop":false, "destroyOnKill":false,
+        "textures":"TTourn", "custom_a_name":"animation", "name":"a_TTourn",
+        "type":"actorSpine", "debug":0
+      },
+      {
+        "x":91, "y":157, "anchor":0.5, "scale":0.9,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"4x4",
+        "name":"s_header", "debug":0,
+        "loc":{
+          "trn_white_eng":["eng", "gb", "can"],
+          "trn_white_deu":["deu"],
+          "trn_white_esp":["esp"],
+          "trn_white_fra":["fra"],
+          "trn_white_gre":["gre"],
+          "trn_white_hin":["hin"],
+          "trn_white_ind":["ind"],
+          "trn_white_ita":["ita"],
+          "trn_white_jpn":["jpn"],
+          "trn_white_kor":["kor"],
+          "trn_white_nor":["nor"],
+          "trn_white_pol":["pol"],
+          "trn_white_prt":["prt"],
+          "trn_white_ron":["ron"],
+          "trn_white_rus":["rus"],
+          "trn_white_swe":["swe"],
+          "trn_white_tha":["tha"],
+          "trn_white_tur":["tur"],
+          "trn_white_ukr":["ukr"],
+          "trn_white_vie":["vie"],
+          "trn_white_zh_cn":["zh_cn"],
+          "trn_white_zh_tw":["zh_tw"]
+        }
+      }
+    ]
+  },
+  "start_window":{
+    "edit":0,
+    "x":642, "y":346, "scale":1.0, "sdx":0.5, "sdy":0.5,
+    "v_x":268, "v_y":453, "v_sdy":0.37, "v_scale":0.67,
+    "deepPosition":false,
+    "animate_setting":{
+      "start_scale":0.19,
+      "prize_x":-25, "prize_y":-702,
+      "close_x":336, "close_y":-851,
+      "time_prize":0.4, "time_window":1.467, "ease":"elastic.out(1, 0.5)",
+      "shine_time":0.6, "shine_delay":0.35,
+      "time_hide":0.6
+    },
+
+    "entities":[
+      {
+        "x":0, "y":0,
+        "width":100, "height":100,
+        "color":"0x000000", "alpha":0.3,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"rect", "name":"r_tint", "debug":0
+      },
+      {
+        "x":0, "y":0,
+        "deepPosition":false, "noCheckSize":true,
+        "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_canvas", "debug":0,
+        "entities":[
+          {
+            "x":0, "y":0, "anchor":0.5,
+            "deepPosition":false, "noCheckSize":true,
+            "type":"sprite", "texture":"pop_up/pop_up_frame",
+            "name":"s_pop_up_frame", "debug":0
+          },
+          {
+            "x":10, "y":12, "dx":0, "dy":0, "speed":1, "scale":1.05,
+            "deepPosition":false, "noCheckSize":true,
+            "play":true, "playLoop":true,
+            "textures":"TStar", "custom_a_name":"animation", "name":"a_TStar",
+            "type":"actorSpine", "debug":0
+          },
+          {
+            "x":-25, "y":-45, "dx":0, "dy":0, "speed":1,
+            "deepPosition":false, "noCheckSize":true,
+            "play":true, "playLoop":true,
+            "textures":"TCubk", "custom_a_name":"animation", "name":"a_TCubk",
+            "type":"actorSpine", "debug":0
+          },
+          {
+            "x":37, "y":24, "dx":0, "dy":0, "speed":1,
+            "deepPosition":false, "noCheckSize":true,
+            "play":true, "playLoop":true,
+            "textures":"TCoin", "custom_a_name":"animation", "name":"a_TCoin",
+            "type":"actorSpine", "debug":0
+          },
+          {
+            "x":336, "y":-168, "anchor":0.5,
+            "deepPosition":false, "noCheckSize":true,
+            "out":"pop_up/b_close_tur_0", "over":"pop_up/b_close_tur_1",
+            "down":"pop_up/b_close_tur_2", "block":"pop_up/b_close_tur_3",
+            "type":"button", "name":"b_close", "debug":0,
+            "oneClick":true, "soundUp":"t_btn_any", "soundOver":"btn_over",
+            "-hintAreaRect":{"x":0, "y":0, "width":10, "height":10, "type":0, "debug":0}
+          },
+          {
+            "x":-1, "y":200, "anchor":0.5,
+            "deepPosition":false, "noCheckSize":true,
+            "oneClick":true, "soundUp":"t_btn_any", "soundOver":"btn_over",
+            "type":"button", "debug":0, "name":"b_open_rules",
+            "out":"pop_up/b_pop_up_check_out_0", "over":"pop_up/b_pop_up_check_out_1",
+            "down":"pop_up/b_pop_up_check_out_2", "block":"pop_up/b_pop_up_check_ou3",
+            "label":{
+              "x":0, "y":-10,
+              "width":204, "height":47, "align":"center", "alignV":"middle",
+              "font":{"size":27, "name":"t_start2_font"},
+              "checkFontSize":true, "oneLine":true, "locCheck":true, "letterSpacing":0,
+              "locConst":"tournament_start_6", "type":"textBitmap", "name":"label", "debug":0,
+              "hin":{
+                "y":10,
+                "width":204, "height":47, "align":"center", "alignV":"middle",
+                "fontSize":"23px", "fontName":"Mangal", "fill":"white",
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              }
+            },
+            "hintAreaRect":{"x":-107, "y":-34, "width":215, "height":63, "type":0, "debug":0}
+          },
+
+          {
+            "x":-316, "y":168, "anchor":0.5,
+            "deepPosition":false, "noCheckSize":true,
+            "soundUp":"t_btn_any", "soundOver":"btn_over",
+            "type":"buttonMobile", "name":"checkBoxOnOff_btn", "debug":0,
+            "out":"pop_up/b_intro_check_box_off", "overScale":1.05, "downScale":0.9,
+            "states":{
+              "on":{
+                "out":"pop_up/b_intro_check_box"
+              },
+              "off":{
+                "out":"pop_up/b_intro_check_box_off"
+              }
+            }
+          },
+          {
+            "x":-287, "y":164,
+            "deepPosition":false, "noCheckSize":true,
+            "width":170, "height":47, "align":"left", "alignV":"middle",
+            "font":{"size":17, "name":"t_start2_font"},
+            "checkFontSize":true, "oneLine":false, "locCheck":true, "letterSpacing":0,
+            "locConst":"tournament_start_5", "type":"textBitmap", "name":"tournament_start_5", "debug":0,
+            "hin":{
+              "y":4,
+              "width":170, "height":47, "align":"left", "alignV":"middle",
+              "fontSize":"16px", "fontName":"Mangal", "fill":"0xffffff", "letterSpacing":0,
+              "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          },
+          {
+            "x":0, "y":-150,
+            "deepPosition":false, "noCheckSize":true,
+            "width":528, "height":93, "align":"center", "alignV":"middle",
+            "font":{"size":67, "name":"t_start1_font"},
+            "checkFontSize":true, "oneLine":true, "locCheck":true,
+            "locConst":"tournament_start_1", "type":"textBitmap", "debug":0, "name":"tournament_start_1",
+            "hin":{
+              "width":528, "height":93, "align":"center", "alignV":"middle",
+              "fontSize":"63px", "fontName":"Mangal",
+              "dropShadow":true,
+              "dropShadowAlpha":0.9,
+              "dropShadowAngle":-4.7,
+              "dropShadowColor":"#4d0000",
+              "dropShadowDistance":4,
+              "fill":[
+                "#fff49f",
+                "#ffe961"
+              ],
+              "fillGradientStops":[
+                0.2,
+                0.4,
+                0.5
+              ],
+              "lineJoin":"bevel",
+              "miterLimit":0,
+              "stroke":"#ce442c",
+              "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          },
+          {
+            "x":0, "y":-78,
+            "deepPosition":false, "noCheckSize":true,
+            "width":590, "height":93, "align":"center", "alignV":"middle",
+            "font":{"size":44, "name":"t_start1_font"},
+            "checkFontSize":true, "oneLine":true,
+            "text":"Book of Billionaire", "type":"textBitmap", "debug":0, "name":"tournament_start_2",
+            "hin":{
+              "width":590, "height":93, "align":"center", "alignV":"middle",
+              "fontSize":"40px", "fontName":"Mangal",
+              "dropShadow":true,
+              "dropShadowAlpha":0.9,
+              "dropShadowAngle":-4.7,
+              "dropShadowColor":"#4d0000",
+              "dropShadowDistance":4,
+              "fill":[
+                "#fff49f",
+                "#ffe961"
+              ],
+              "fillGradientStops":[
+                0.2,
+                0.4,
+                0.5
+              ],
+              "lineJoin":"bevel",
+              "miterLimit":0,
+              "stroke":"#ce442c",
+              "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          },
+          {
+            "x":0, "y":-10,
+            "deepPosition":false, "noCheckSize":true,
+            "width":652, "height":82, "align":"center", "alignV":"middle",
+            "font":{"size":33, "name":"t_start1_font"},
+            "checkFontSize":true, "oneLine":false, "locCheck":true, "fullCheckFontSize":true, "forceCheckFontSize":true,
+            "locConst":"tournament_start_3", "type":"textBitmap", "debug":0, "name":"tournament_start_3",
+            "hin":{
+              "width":652, "height":82, "align":"center", "alignV":"middle",
+              "fontSize":"28px", "fontName":"Mangal",
+              "dropShadow":true,
+              "dropShadowAlpha":0.9,
+              "dropShadowAngle":-4.7,
+              "dropShadowColor":"#4d0000",
+              "dropShadowDistance":2,
+              "padding":10,
+              "fill":[
+                "#fff49f",
+                "#ffe961"
+              ],
+              "fillGradientStops":[
+                0.2,
+                0.4,
+                0.5
+              ],
+              "lineJoin":"bevel",
+              "miterLimit":0,
+              "stroke":"#ce442c",
+              "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            },
+            "locConfig":{
+              "jpn":{"fontSize":30},
+              "fra":{"fontSize":30}
+            }
+          },
+
+          {
+            "x":0, "y":63,
+            "deepPosition":false, "noCheckSize":true,
+            "width":612, "height":124, "align":"center", "alignV":"middle",
+            "font":{"size":104, "name":"t_start_number_font"},
+            "checkFontSize":true, "oneLine":true,
+            "text":"€100,000!", "type":"textBitmap", "debug":0, "name":"t_cashier"
+          }
+        ]
+      }
+    ]
+  },
+  "final_window":{
+    "edit":0,
+    "x":642, "y":358, "scale":1.0, "sdx":0.5, "sdy":0.5,
+    "v_x":268, "v_y":461, "v_sdy":0.37, "v_scale":0.67,
+    "deepPosition":false,
+    "animate_setting":{
+      "start_scale":0.19,
+      "prize_x":-25, "prize_y":-702,
+      "close_x":336, "close_y":-851,
+      "time_prize":0.4, "time_window":1.467, "ease":"elastic.out(1, 0.5)",
+      "shine_time":0.6, "shine_delay":0.35,
+      "time_hide":0.6
+    },
+
+    "entities":[
+      {
+        "x":0, "y":0,
+        "width":100, "height":100,
+        "color":"0x000000", "alpha":0.3,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"rect", "name":"r_tint", "debug":0
+      },
+      {
+        "x":0, "y":0,
+        "deepPosition":false, "noCheckSize":true,
+        "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_canvas", "debug":0,
+        "entities":[
+          {
+            "x":0, "y":0, "dx":0, "dy":0, "speed":1,
+            "deepPosition":false, "noCheckSize":true,
+            "play":true, "playLoop":true,
+            "textures":"TStars_final", "custom_a_name":"animation", "name":"a_TStars_final",
+            "type":"actorSpine", "debug":0
+          },
+          {
+            "x":0, "y":21, "dx":0, "dy":0, "speed":1,
+            "deepPosition":false, "noCheckSize":true,
+            "play":true, "playLoop":true,
+            "textures":"TShine", "custom_a_name":"animation", "name":"a_TShine",
+            "type":"actorSpine", "debug":0
+          },
+          {
+            "x":0, "y":21, "dx":0, "dy":0, "speed":1, "scale":1.0,
+            "deepPosition":false, "noCheckSize":true,
+            "play":true, "playLoop":false,
+            "textures":"TShine_start", "custom_a_name":"animation", "name":"a_TShine_start",
+            "type":"actorSpine", "debug":0
+          },
+          {
+            "x":0, "y":0, "anchor":0.5,
+            "deepPosition":false, "noCheckSize":true,
+            "type":"sprite", "texture":"pop_up/pop_up_frame",
+            "name":"s_pop_up_frame", "debug":0
+          },
+          {
+            "x":10, "y":12, "dx":0, "dy":0, "speed":1, "scale":1.05,
+            "deepPosition":false, "noCheckSize":true,
+            "play":true, "playLoop":true,
+            "textures":"TStar", "custom_a_name":"animation", "name":"a_TStar",
+            "type":"actorSpine", "debug":0
+          },
+          {
+            "x":-25, "y":-45, "dx":0, "dy":0, "speed":1,
+            "deepPosition":false, "noCheckSize":true,
+            "play":true, "playLoop":true,
+            "textures":"TCubk", "custom_a_name":"animation", "name":"a_TCubk",
+            "type":"actorSpine", "debug":0
+          },
+          {
+            "x":37, "y":24, "dx":0, "dy":0, "speed":1,
+            "deepPosition":false, "noCheckSize":true,
+            "play":true, "playLoop":true,
+            "textures":"TCoin", "custom_a_name":"animation", "name":"a_TCoin",
+            "type":"actorSpine", "debug":0
+          },
+          {
+            "x":336, "y":-168, "anchor":0.5,
+            "deepPosition":false, "noCheckSize":true,
+            "out":"pop_up/b_close_tur_0", "over":"pop_up/b_close_tur_1",
+            "down":"pop_up/b_close_tur_2", "block":"pop_up/b_close_tur_3",
+            "type":"button", "name":"b_close", "debug":0,
+            "oneClick":true, "soundUp":"t_btn_any", "soundOver":"btn_over",
+            "-hintAreaRect":{"x":0, "y":0, "width":10, "height":10, "type":0, "debug":0}
+          },
+
+          {
+            "x":0, "y":-110,
+            "deepPosition":true, "noCheckSize":true,
+            "width":650, "height":169, "align":"center", "alignV":"middle",
+            "font":{"size":67, "name":"t_start1_font"},
+            "checkFontSize":true, "oneLine":false, "locCheck":true, "fullCheckFontSize":true, "forceCheckFontSize":true,
+            "locConst":"tournament_finaly_1", "type":"textBitmap", "debug":0, "name":"tournament_finaly_1",
+            "hin":{
+              "width":650, "height":169, "align":"center", "alignV":"middle",
+              "fontSize":"63px", "fontName":"Mangal",
+              "dropShadow":true,
+              "dropShadowAlpha":0.9,
+              "dropShadowAngle":-4.7,
+              "dropShadowColor":"#4d0000",
+              "dropShadowDistance":4,
+              "padding":10,
+              "fill":[
+                "#fff49f",
+                "#ffe961"
+              ],
+              "fillGradientStops":[
+                0.2,
+                0.4,
+                0.5
+              ],
+              "lineJoin":"bevel",
+              "miterLimit":0,
+              "stroke":"#ce442c",
+              "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            },
+            "locConfig":{
+              "gre":{"fontSize":54},
+              "jpn":{"fontSize":41}
+            }
+          },
+          {
+            "x":0, "y":60,
+            "deepPosition":false, "noCheckSize":true,
+            "width":615, "height":158, "align":"center", "alignV":"middle",
+            "font":{"size":49, "name":"t_start1_font"},
+            "checkFontSize":true, "oneLine":false, "locCheck":true, "forceCheckFontSize":true, "fullCheckFontSize":true,
+            "text":"YOU FINISHED IN THE %s\nPLACE AND WON €%s!", "type":"textBitmap", "debug":0,
+            "name":"tournament_finaly_2",
+            "hin":{
+              "width":665, "height":188, "align":"center", "alignV":"middle",
+              "fontSize":"45px", "fontName":"Mangal",
+              "dropShadow":true,
+              "dropShadowAlpha":0.9,
+              "dropShadowAngle":-4.7,
+              "dropShadowColor":"#4d0000",
+              "dropShadowDistance":4,
+              "fill":[
+                "#fff49f",
+                "#ffe961"
+              ],
+              "fillGradientStops":[
+                0.2,
+                0.4,
+                0.5
+              ],
+              "lineJoin":"bevel",
+              "miterLimit":0,
+              "stroke":"#ce442c",
+              "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            },
+            "locConfig":{
+              "prt":{"fontSize":45},
+              "fra":{"fontSize":40.5},
+              "swe":{"fontSize":45},
+              "esp":{"fontSize":45},
+              "jpn":{"fontSize":33}
+            }
+          },
+          {
+            "x":0, "y":174,
+            "deepPosition":false, "noCheckSize":true,
+            "width":600, "height":53, "align":"center", "alignV":"middle",
+            "font":{"size":20, "name":"t_final_font"},
+            "checkFontSize":true, "oneLine":true, "locCheck":true,
+            "locConst":"tournament_finaly_3", "type":"textBitmap", "debug":0, "name":"tournament_finaly_3",
+            "hin":{
+              "width":618, "height":53, "align":"center", "alignV":"middle",
+              "fontSize":"17px", "fontName":"Mangal",
+              "dropShadow":true,
+              "dropShadowAngle":1.6,
+              "dropShadowDistance":2,
+              "dropShadowColor":"#3c231c",
+              "fill":"#ffe21f",
+              "padding":10,
+              "fillGradientStops":[
+                0.5,
+                0.4,
+                0.4
+              ],
+              "lineJoin":"bevel",
+              "miterLimit":8,
+              "stroke":"#ce442c",
+              "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "rules_window":{
+    "edit":0,
+    "x":70, "y":0, "sdx":0.5, "sdy":0.5,
+    "deepPosition":false,
+    "time_show":0.4, "time_hide":0.2,
+
+    "leaders":{
+      "x":0, "y":0,
+      "deepPosition":false, "noCheckSize":true,
+      "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+      "type":"container", "name":"c_tab_leaders", "debug":0,
+      "debugHitArea":false,
+      "debug_count":0,
+      "countMax":50,
+      "element":{
+        "x":57, "y":38,
+        "deepPosition":false, "noCheckSize":true,
+        "interactiveChildren":false, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_", "debug":0,
+        "entities":[
+          {
+            "x":0, "y":46,
+            "deepPosition":false, "noCheckSize":true,
+            "type":"sprite", "texture":"leaderboard/leaderboard_lines",
+            "name":"s_leaderboard_lines", "debug":0
+          },
+          {
+            "x":33, "y":25, "anchor":0.5,
+            "deepPosition":false, "noCheckSize":true,
+            "places":{
+              "1":"leaderboard/leaderboard_medal_1",
+              "2":"leaderboard/leaderboard_medal_2",
+              "3":"leaderboard/leaderboard_medal_3",
+              "-":"leaderboard/leaderboard_medal_4"
+            },
+            "type":"sprite", "texture":"leaderboard/leaderboard_medal_1",
+            "name":"s_place", "debug":0,
+            "entities":[
+              {
+                "x":2, "y":-3,
+                "deepPosition":false, "noCheckSize":true,
+                "width":23, "height":19, "align":"center", "alignV":"middle",
+                "font":{"size":13, "name":"t_rules_number_2_font"}, "fill":"0xFFEBD7", "letterSpacing":-2,
+                "checkFontSize":false, "oneLine":true, "toUpperCase":false, "locCheck":false,
+                "text":"4", "type":"textBitmap", "name":"t_number", "debug":0
+              }
+            ]
+          },
+          {
+            "x":115, "y":19,
+            "deepPosition":false, "noCheckSize":true,
+            "width":355, "height":40, "align":"left", "alignV":"middle",
+            "fontSize":"13px", "fontName":"NimbusFont", "fill":"0x69606A", "letterSpacing":0,
+            "leading":0, "checkFontSize":true, "oneLine":true, "toUpperCase":false,
+            "locCheck":false,
+            "text":"USER-129304556", "type":"textFont", "name":"t_name", "debug":0
+          },
+          {
+            "x":514, "y":19,
+            "deepPosition":false, "noCheckSize":true,
+            "width":269, "height":40, "align":"left", "alignV":"middle",
+            "font":{"size":13, "name":"t_rules_number_1_font"}, "fill":"0x69606A", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+            "text":"8.9874", "type":"textBitmap", "name":"t_points", "debug":0
+          },
+
+          {
+            "x":115, "y":33,
+            "deepPosition":false, "noCheckSize":true,
+            "width":355, "height":40, "align":"left", "alignV":"middle",
+            "font":{"size":12, "name":"t_rules1_font"}, "fill":"0x69606A", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+            "locConst":"tournament_rules_player_3", "type":"textBitmap", "name":"t_tournament_rules_player_3", "debug":0,
+            "hin":{
+              "width":355, "height":40, "align":"left", "alignV":"middle",
+              "fontSize":"11px", "fontName":"Mangal", "fill":"0x69606A", "letterSpacing":0,
+              "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          },
+          {
+            "x":514, "y":33,
+            "deepPosition":false, "noCheckSize":true,
+            "width":269, "height":40, "align":"left", "alignV":"middle",
+            "font":{"size":12, "name":"t_rules1_font"}, "fill":"0x69606A", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+            "locConst":"tournament_rules_player_4", "type":"textBitmap", "name":"t_tournament_rules_player_4", "debug":0,
+            "hin":{
+              "width":355, "height":40, "align":"left", "alignV":"middle",
+              "fontSize":"11px", "fontName":"Mangal", "fill":"0x69606A", "letterSpacing":0,
+              "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          },
+
+          {
+            "x":791, "y":6,
+            "deepPosition":false, "noCheckSize":true,
+            "type":"sprite", "texture":"leaderboard/Leaderboard_gold_coin",
+            "name":"s_Leaderboard_gold_coin", "debug":0
+          },
+          {
+            "x":0, "y":0, "visible":false,
+            "deepPosition":false, "noCheckSize":true,
+            "type":"sprite", "texture":"leaderboard/leaderboard_line_2",
+            "name":"s_user", "debug":0
+          }
+        ]
+      },
+      "step":50,
+      "entities":[
+        {
+          "x":573, "y":352, "dx":0, "dy":0, "speed":1.05,
+          "deepPosition":false, "noCheckSize":true,
+          "play":true, "playLoop":true, "destroyOnKill":true,
+          "textures":"Turnament_Leaders", "custom_a_name":"animation", "name":"a_Turnament_Leaders",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":573, "y":180, "anchor":0.5,
+          "deepPosition":false, "noCheckSize":true,
+          "type":"sprite", "texture":"leaderboard/Leaderboard_back_9",
+          "name":"s_Leaderboard_back_9", "debug":0
+        },
+        {
+          "x":104, "y":206,
+          "interactiveChildren":true, "centered":false, "deepPosition":true,
+          "type":"container", "name":"c_page_content", "debug":0,
+          "entities":[
+            {
+              "x":80, "y":19,
+              "deepPosition":false, "noCheckSize":true,
+              "width":300, "height":40, "align":"left", "alignV":"middle",
+              "font":{"size":16, "name":"t_rules2_font"}, "fill":"0x82888D", "letterSpacing":0,
+              "checkFontSize":false, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_player_2", "type":"textBitmap", "name":"t_tournament_rules_player_2", "debug":0,
+              "hin":{
+                "width":700, "height":40, "align":"left", "alignV":"middle",
+                "fontSize":"15px", "fontName":"Mangal", "fill":"0x82888D", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              }
+            }
+          ]
+        },
+        {
+          "x":104, "y":206,
+          "width":936, "height":394,
+          "color":"0x000000", "alpha":1,
+          "deepPosition":false, "noCheckSize":true,
+          "type":"rect", "name":"r_content_mask", "debug":0, "edit":0
+        }
+      ]
+    },
+    "prizes":{
+      "x":0, "y":0,
+      "deepPosition":false, "noCheckSize":true,
+      "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+      "type":"container", "name":"c_tab_prizes", "debug":0,
+      "step":40,
+      "element":{
+        "x":184, "y":340,
+        "deepPosition":false, "noCheckSize":true,
+        "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_pos", "debug":0,
+        "entities":[
+          {
+            "x":1, "y":18, "scaleX":0.699,
+            "deepPosition":false, "noCheckSize":true,
+            "type":"sprite", "texture":"leaderboard/leaderboard_lines",
+            "name":"s_leaderboard_lines", "debug":0
+          },
+          {
+            "x":36, "y":4,
+            "deepPosition":false, "noCheckSize":true,
+            "width":174, "height":40, "align":"left", "alignV":"middle",
+            "font":{"size":16, "name":"t_rules_number_3_font"}, "fill":"0x232323",
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+            "text":"4.", "type":"textBitmap", "name":"t_place", "debug":0
+          },
+          {
+            "x":248, "y":0,
+            "deepPosition":false, "noCheckSize":true,
+            "width":259, "height":40, "align":"left", "alignV":"middle",
+            "font":{"size":23, "name":"t_rules_number_3_font"}, "fill":"0x232323",
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+            "text":"€5,000", "type":"textBitmap", "name":"t_value", "debug":0
+          },
+          {
+            "x":508, "y":-10, "scale":0.68,
+            "deepPosition":false, "noCheckSize":true,
+            "type":"sprite", "texture":"leaderboard/Leaderboard_gold_coin",
+            "name":"s_Leaderboard_gold_coin", "debug":0
+          }
+        ]
+      },
+      "debugHitArea":false, "debug_count":0,
+      "entities":[
+        {
+          "x":531, "y":353, "dx":0, "dy":0, "speed":1,
+          "deepPosition":false, "noCheckSize":true,
+          "play":true, "playLoop":true,
+          "textures":"TStars_in_rules", "custom_a_name":"animation",
+          "name":"a_TStars_in_rules",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":531, "y":352, "dx":0, "dy":0, "speed":1,
+          "deepPosition":false, "noCheckSize":true,
+          "play":true, "playLoop":true,
+          "textures":"TStrok", "custom_a_name":"animation",
+          "name":"a_TStrok",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":324, "y":133,
+          "deepPosition":false, "noCheckSize":true,
+          "type":"sprite", "texture":"prizes/prizes_cash_frame",
+          "name":"s_prizes_cash_frame", "debug":0
+        },
+
+        {
+          "x":571, "y":106,
+          "deepPosition":false, "noCheckSize":true,
+          "width":859, "height":80, "align":"center", "alignV":"middle",
+          "font":{"size":20, "name":"t_start1_font"},
+          "checkFontSize":true, "oneLine":false, "toUpperCase":false,
+          "text":"Book of Billionaire",
+          "type":"textBitmap", "name":"t_tournament_rules_prize_1", "debug":0,
+          "hin":{
+            "y":5,
+            "width":859, "height":80, "align":"center", "alignV":"middle",
+            "fontSize":"17px", "fontName":"Mangal",
+            "padding":10,
+            "dropShadow":true,
+            "dropShadowDistance":1,
+            "dropShadowBlur":2,
+            "dropShadowColor":"#4d0000",
+            "fill":[
+              "#fff49f",
+              "#ffe961"
+            ],
+            "fillGradientStops":[
+              0.2,
+              0.4,
+              0.5
+            ],
+            "lineJoin":"bevel",
+            "miterLimit":0,
+            "stroke":"#ce442c",
+            "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+            "type":"textFont", "debug":0
+          }
+        },
+        {
+          "x":575, "y":154,
+          "deepPosition":false, "noCheckSize":true,
+          "width":471, "height":40, "align":"center", "alignV":"middle",
+          "font":{"size":26, "name":"t_rules3_font"},
+          "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+          "text":"tournament_rules_prize_3", "type":"textBitmap",
+          "name":"t_cashier", "debug":0,
+          "hin":{
+            "y":7,
+            "width":471, "height":40, "align":"center", "alignV":"middle",
+            "fontSize":"22px", "fontName":"Mangal",
+            "padding":10,
+            "dropShadow":true,
+            "dropShadowAlpha":0.9,
+            "dropShadowAngle":-4.7,
+            "dropShadowColor":"#451c28",
+            "dropShadowDistance":2,
+            "fill":[
+              "#fff4a3",
+              "#ffdb29"
+            ],
+            "fillGradientStops":[
+              0.2,
+              0.4,
+              0.5
+            ],
+            "lineJoin":"bevel",
+            "miterLimit":0,
+            "stroke":"#ce442c",
+            "leading":0, "checkFontSize":true, "oneLine":true, "toUpperCase":false,
+            "type":"textFont", "debug":0
+          },
+          "locConfig":{
+            "deu":{"dy":0.05},
+            "rus":{"dy":-0.05},
+            "ind":{"dy":0.05}
+          }
+        },
+
+        {
+          "x":104, "y":206,
+          "interactiveChildren":true, "centered":false, "deepPosition":true,
+          "type":"container", "name":"c_page_content", "debug":0,
+          "entities":[
+            {
+              "x":472, "y":109, "anchor":0.5,
+              "deepPosition":false, "noCheckSize":true,
+              "type":"sprite", "texture":"prizes/prizes_confetti",
+              "name":"s_prizes_confetti", "debug":0
+            },
+            {
+              "x":398, "y":222, "anchor":0.5,
+              "deepPosition":false, "noCheckSize":true,
+              "type":"sprite", "texture":"prizes/prizes_medal_gold_shadow",
+              "name":"s_prizes_medal_gold_shadow", "debug":0
+            },
+            {
+              "x":191, "y":274, "anchor":0.5,
+              "deepPosition":false, "noCheckSize":true,
+              "type":"sprite", "texture":"prizes/prizes_medal_shadow",
+              "name":"s_prizes_medal_shadow1", "debug":0
+            },
+            {
+              "x":741, "y":265, "anchor":0.5, "scale":0.69,
+              "deepPosition":false, "noCheckSize":true,
+              "type":"sprite", "texture":"prizes/prizes_medal_shadow",
+              "name":"s_prizes_medal_shadow2", "debug":0
+            },
+
+            {
+              "x":433, "y":144, "dy":0, "speed":1,
+              "deepPosition":false, "noCheckSize":true,
+              "play":true, "playLoop":true,
+              "textures":"TWiner", "custom_a_name":"1", "name":"a_TWiner1",
+              "type":"actorSpine", "debug":0
+            },
+            {
+              "x":431, "y":154, "dy":0, "speed":1,
+              "deepPosition":false, "noCheckSize":true,
+              "play":true, "playLoop":true,
+              "textures":"TWiner", "custom_a_name":"2", "name":"a_TWiner2",
+              "type":"actorSpine", "debug":0
+            },
+            {
+              "x":433, "y":164, "dy":0, "speed":1,
+              "deepPosition":false, "noCheckSize":true,
+              "play":true, "playLoop":true,
+              "textures":"TWiner", "custom_a_name":"3", "name":"a_TWiner3",
+              "type":"actorSpine", "debug":0
+            },
+            {
+              "x":464, "y":124, "anchor":0.5,
+              "deepPosition":false, "noCheckSize":true,
+              "type":"sprite", "texture":"prizes/prizes_gold_medal",
+              "name":"s_prizes_gold_medal", "debug":0
+            },
+            {
+              "x":191, "y":201, "anchor":0.5,
+              "deepPosition":false, "noCheckSize":true,
+              "type":"sprite", "texture":"prizes/prizes_silver_medal",
+              "name":"s_prizes_silver_medal", "debug":0
+            },
+            {
+              "x":732, "y":205, "anchor":0.5,
+              "deepPosition":false, "noCheckSize":true,
+              "type":"sprite", "texture":"prizes/prizes_bronze_medal",
+              "name":"s_prizes_bronze_medal", "debug":0
+            },
+
+            {
+              "x":465, "y":11,
+              "deepPosition":false, "noCheckSize":true,
+              "width":569, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":28, "name":"t_start2_font"}, "fill":"0x000000", "letterSpacing":0,
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_prize_7", "type":"textBitmap", "name":"t_tournament_rules_prize_7", "debug":0,
+              "hin":{
+                "width":569, "height":40, "align":"center", "alignV":"middle",
+                "fontSize":"25px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "locConfig":{
+                "vie":{"dy":0.1},
+                "esp":{"dy":0.1}
+              }
+            },
+            {
+              "x":191, "y":106,
+              "deepPosition":false, "noCheckSize":true,
+              "width":268, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":28, "name":"t_start2_font"}, "fill":"0x000000", "letterSpacing":0,
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_prize_8", "type":"textBitmap", "name":"t_tournament_rules_prize_8", "debug":0,
+              "hin":{
+                "width":268, "height":40, "align":"center", "alignV":"middle",
+                "fontSize":"25px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "locConfig":{
+                "vie":{"dy":0.1},
+                "esp":{"dy":0.1}
+              }
+            },
+            {
+              "x":734, "y":124,
+              "deepPosition":false, "noCheckSize":true,
+              "width":268, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":28, "name":"t_start2_font"}, "fill":"0x000000", "letterSpacing":0,
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_prize_9", "type":"textBitmap", "name":"t_tournament_rules_prize_9", "debug":0,
+              "hin":{
+                "width":268, "height":40, "align":"center", "alignV":"middle",
+                "fontSize":"25px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "locConfig":{
+                "vie":{"dy":0.1},
+                "esp":{"dy":0.1}
+              }
+            },
+
+            {
+              "x":220, "y":301,
+              "deepPosition":false, "noCheckSize":true,
+              "width":191, "height":40, "align":"left", "alignV":"middle",
+              "font":{"size":15, "name":"t_start2_font"}, "fill":"0x9BA0AA", "letterSpacing":0,
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_prize_5", "type":"textBitmap", "name":"t_tournament_rules_prize_5", "debug":0,
+              "hin":{
+                "width":191, "height":40, "align":"left", "alignV":"middle",
+                "fontSize":"12px", "fontName":"Mangal", "fill":"0x9BA0AA", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              }
+            },
+            {
+              "x":433, "y":301,
+              "deepPosition":false, "noCheckSize":true,
+              "width":325, "height":40, "align":"left", "alignV":"middle",
+              "font":{"size":15, "name":"t_start2_font"}, "fill":"0x9BA0AA", "letterSpacing":0,
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_prize_6", "type":"textBitmap", "name":"t_tournament_rules_prize_6", "debug":0,
+              "hin":{
+                "width":191, "height":40, "align":"left", "alignV":"middle",
+                "fontSize":"12px", "fontName":"Mangal", "fill":"0x9BA0AA", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              }
+            },
+
+            {
+              "x":462, "y":185,
+              "deepPosition":false, "noCheckSize":true,
+              "width":162, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":29, "name":"t_rules_number_4_font"},
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+              "text":"€10,000", "type":"textBitmap", "name":"t_1", "debug":0
+            },
+            {
+              "x":190, "y":248,
+              "deepPosition":false, "noCheckSize":true,
+              "width":140, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":28, "name":"t_rules_number_5_font"},
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+              "text":"€8,000", "type":"textBitmap", "name":"t_2", "debug":0
+            },
+            {
+              "x":732, "y":242,
+              "deepPosition":false, "noCheckSize":true,
+              "width":96, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":20, "name":"t_rules_number_6_font"},
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+              "text":"€6,000", "type":"textBitmap", "name":"t_3", "debug":0
+            }
+          ]
+        },
+        {
+          "x":104, "y":206,
+          "width":936, "height":394,
+          "color":"0x000000", "alpha":1,
+          "deepPosition":false, "noCheckSize":true,
+          "type":"rect", "name":"r_content_mask", "debug":0, "edit":0
+        }
+      ]
+    },
+    "rules":{
+      "x":0, "y":0,
+      "deepPosition":false, "noCheckSize":true,
+      "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+      "type":"container", "name":"c_tab_rules", "debug":0,
+      "debugHitArea":false,
+      "entities":[
+        {
+          "x":560, "y":337, "dx":0, "dy":0, "speed":1,
+          "deepPosition":false, "noCheckSize":true,
+          "play":true, "playLoop":true,
+          "textures":"TStar_rules", "custom_a_name":"animation", "name":"a_TStar_rules",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":556, "y":331, "dx":0, "dy":0, "speed":1,
+          "deepPosition":false, "noCheckSize":true,
+          "play":true, "playLoop":true,
+          "textures":"TDetal_B", "custom_a_name":"animation", "name":"a_TDetal_B",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":553, "y":325, "dx":0, "dy":0, "speed":1,
+          "deepPosition":false, "noCheckSize":true,
+          "play":true, "playLoop":true,
+          "textures":"TDetal", "custom_a_name":"animation", "name":"a_TDetal",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":535, "y":325, "dx":0, "dy":0, "speed":1,
+          "deepPosition":false, "noCheckSize":true,
+          "play":true, "playLoop":true,
+          "textures":"TDetal", "custom_a_name":"animation2", "name":"a_TDetal2",
+          "type":"actorSpine", "debug":0
+        },
+
+        {
+          "x":572, "y":115,
+          "deepPosition":false, "noCheckSize":true,
+          "width":584, "height":80, "align":"center", "alignV":"middle",
+          "font":{"size":41, "name":"t_rules4_font"}, "letterSpacing":-4,
+          "checkFontSize":true, "oneLine":false, "toUpperCase":false, "locCheck":true,
+          "locConst":"tournament_rules_rules_3",
+          "type":"textBitmap", "name":"t_tournament_rules_rules_3", "debug":0,
+          "hin":{
+            "y":10,
+            "width":859, "height":80, "align":"center", "alignV":"middle",
+            "fontSize":"37px", "fontName":"Mangal",
+            "dropShadow":true,
+            "dropShadowAlpha":0.9,
+            "dropShadowAngle":-4.7,
+            "dropShadowColor":"#1d1d1d",
+            "dropShadowDistance":3,
+            "padding":10,
+            "fill":[
+              "#ffca1d",
+              "#ff941a"
+            ],
+            "fillGradientStops":[
+              0.3,
+              1,
+              0.9
+            ],
+            "lineJoin":"bevel",
+            "miterLimit":0,
+            "stroke":"#ce442c",
+            "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+            "type":"textFont", "debug":0
+          }
+        },
+
+        {
+          "x":104, "y":206,
+          "interactiveChildren":true, "centered":false, "deepPosition":true,
+          "type":"container", "name":"c_page_content", "debug":0,
+          "entities":[
+            {
+              "x":24, "y":11,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+              "text":"Book of Billionaire", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_4", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "text":"tournament_rules_rules_5", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_5", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_6", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_6", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "text":"tournament_rules_rules_7", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_7", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "text":"tournament_rules_rules_8", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_8", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_9", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_9", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_10", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_10", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "text":"tournament_rules_rules_11", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_11", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_12", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_12", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_13", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_13", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_14", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_14", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_15", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_15", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_16", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_16", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_17", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_17", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_18", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_18", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_19", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_19", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_20", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_20", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "text":"tournament_rules_rules_21", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_21", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_22", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_22", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_23", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_23", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_24", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_24", "debug":0, "active":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_25", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_25", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_26", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_26", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":24, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "width":885, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_27", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_27", "debug":0,
+              "hin":{
+                "width":885, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"13px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":20
+            },
+            {
+              "x":0, "y":0,
+              "deepPosition":false, "noCheckSize":true,
+              "type":"sprite", "texture":"4x4",
+              "name":"s_4x4", "debug":0,
+              "format":true, "pos_dy":20
+            }
+          ]
+        },
+        {
+          "x":104, "y":206,
+          "width":936, "height":394,
+          "color":"0x000000", "alpha":1,
+          "deepPosition":false, "noCheckSize":true,
+          "type":"rect", "name":"r_content_mask", "debug":0, "edit":0
+        },
+
+        {
+          "x":571, "y":586, "anchor":0.5,
+          "deepPosition":false, "noCheckSize":true,
+          "type":"sprite", "texture":"rules/rules_plaska",
+          "name":"s_rules_plaska", "debug":0
+        },
+        {
+          "x":571, "y":588,
+          "deepPosition":false, "noCheckSize":true,
+          "width":418, "height":25, "align":"center", "alignV":"middle",
+          "font":{"size":15, "name":"t_rules1_font"},
+          "checkFontSize":true, "oneLine":false, "toUpperCase":false, "locCheck":true,
+          "text":"The minimum bet to qualify in the tournament is %s",
+          "type":"textBitmap", "name":"t_tournament_rules_rules_1", "debug":0,
+          "hin":{
+            "width":418, "height":25, "align":"center", "alignV":"middle",
+            "fontSize":"13px", "fontName":"Mangal", "fill":"0xffffff", "letterSpacing":0,
+            "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+            "type":"textFont", "debug":0
+          }
+        }
+      ]
+    },
+    "entities":[
+      {
+        "x":0, "y":0,
+        "width":100, "height":100,
+        "color":"0x000000", "alpha":0.3,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"rect", "name":"r_tint", "debug":0
+      },
+      {
+        "x":0, "y":0,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"main_window/prizes_back_frame",
+        "name":"s_pop_up_frame", "debug":0
+      },
+
+      {
+        "x":-70, "y":0,
+        "m_x":0, "m_y":0,
+        "v_x":0, "v_y":0,
+        "type":"sprite", "texture":"tournament_prizes_1.png", "m_texture":"1_0000_Lederboard.png",
+        "v_texture":"Leader+Board_vert.png", "name":"preview",
+        "debug":0, "active":0
+      },
+
+      {
+        "x":0, "y":0,
+        "deepPosition":false, "noCheckSize":true,
+        "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_tabs", "debug":0
+      },
+
+      {
+        "x":551, "y":328, "dx":0, "dy":0, "speed":1, "scale":0.93,
+        "deepPosition":false, "noCheckSize":true,
+        "play":true, "playLoop":true,
+        "textures":"TTourn", "custom_a_name":"animation", "name":"a_TTourn",
+        "type":"actorSpine", "debug":0
+      },
+      {
+        "x":573, "y":48, "anchor":0.5, "scale":0.83,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"4x4",
+        "name":"s_header", "debug":0,
+        "loc":{
+          "trn_eng":["eng", "gb", "can"],
+          "trn_deu":["deu"],
+          "trn_esp":["esp"],
+          "trn_fra":["fra"],
+          "trn_gre":["gre"],
+          "trn_hin":["hin"],
+          "trn_ind":["ind"],
+          "trn_ita":["ita"],
+          "trn_jpn":["jpn"],
+          "trn_kor":["kor"],
+          "trn_nor":["nor"],
+          "trn_pol":["pol"],
+          "trn_prt":["prt"],
+          "trn_ron":["ron"],
+          "trn_rus":["rus"],
+          "trn_swe":["swe"],
+          "trn_tha":["tha"],
+          "trn_tur":["tur"],
+          "trn_ukr":["ukr"],
+          "trn_vie":["vie"],
+          "trn_zh_cn":["zh_cn"],
+          "trn_zh_tw":["zh_tw"]
+        }
+      },
+
+      {
+        "x":357, "y":186,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"main_window/prizes_slider_2",
+        "name":"s_prizes_slider_2", "debug":0
+      },
+      {
+        "x":431, "y":197, "anchor":0.5,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"button", "out":"4x4", "userData":"b_leaders",
+        "debug":0, "name":"b_1",
+        "soundUp":"t_btn_any", "soundOver":"btn_over",
+        "entities":[
+          {
+            "x":0, "y":0, "anchor":0.5,
+            "type":"sprite", "texture":"main_window/prizes_slider_1", "name":"s_active", "debug":0
+          },
+          {
+            "x":1, "y":1,
+            "deepPosition":false, "noCheckSize":true,
+            "width":135, "height":20, "align":"center", "alignV":"middle",
+            "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x000000", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+            "locConst":"tournament_rules_player_1", "type":"textBitmap", "name":"t_label", "debug":0,
+            "hin":{
+              "width":135, "height":20, "align":"center", "alignV":"middle",
+              "fontSize":"12px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+              "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          }
+        ],
+        "hintAreaRect":{"x":-70, "y":-13, "width":140, "height":25, "type":0, "debug":0}
+      },
+      {
+        "x":572, "y":197, "anchor":0.5,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"button", "out":"4x4", "userData":"b_prizes",
+        "debug":0, "name":"b_2",
+        "soundUp":"t_btn_any", "soundOver":"btn_over",
+        "entities":[
+          {
+            "x":0, "y":0, "anchor":0.5,
+            "type":"sprite", "texture":"main_window/prizes_slider_1", "name":"s_active", "debug":0
+          },
+          {
+            "x":1, "y":1,
+            "deepPosition":false, "noCheckSize":true,
+            "width":135, "height":20, "align":"center", "alignV":"middle",
+            "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x000000", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+            "locConst":"tournament_rules_prize_4", "type":"textBitmap", "name":"t_label", "debug":0,
+            "hin":{
+              "width":135, "height":20, "align":"center", "alignV":"middle",
+              "fontSize":"12px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+              "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          }
+        ],
+        "hintAreaRect":{"x":-70, "y":-13, "width":140, "height":25, "type":0, "debug":0}
+      },
+      {
+        "x":714, "y":197, "anchor":0.5,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"button", "out":"4x4", "userData":"b_rules",
+        "debug":0, "name":"b_3",
+        "soundUp":"t_btn_any", "soundOver":"btn_over",
+        "entities":[
+          {
+            "x":0, "y":0, "anchor":0.5,
+            "type":"sprite", "texture":"main_window/prizes_slider_1", "name":"s_active", "debug":0
+          },
+          {
+            "x":1, "y":1,
+            "deepPosition":false, "noCheckSize":true,
+            "width":135, "height":20, "align":"center", "alignV":"middle",
+            "font":{"size":15, "name":"t_rules1_font"}, "fill":"0x000000", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+            "locConst":"tournament_rules_rules_2", "type":"textBitmap", "name":"t_label", "debug":0,
+            "hin":{
+              "width":135, "height":20, "align":"center", "alignV":"middle",
+              "fontSize":"12px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+              "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          }
+        ],
+        "hintAreaRect":{"x":-70, "y":-13, "width":140, "height":25, "type":0, "debug":0}
+      },
+
+      {
+        "x":1029, "y":211,
+        "deepPosition":false, "noCheckSize":true,
+        "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_scroll", "debug":0,
+        "entities":[
+          {
+            "x":0, "y":0, "rotate":0,
+            "type":"sprite", "texture":"main_window/prizes_slider_back", "name":"s_scroll_bg", "debug":0
+          },
+          {
+            "x":0, "y":0,
+            "minSlideValue":0, "maxSlideValue":265,
+            "type":"slider", "texture":"main_window/prizes_slider_3", "name":"sl_page_slider", "debug":0,
+            "hintAreaRect":{"x":-1, "y":0, "width":9, "height":105, "type":0, "debug":0}
+          }
+        ]
+      },
+
+      {
+        "x":718, "y":39,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"main_window/prizes_data_time_frame",
+        "name":"s_prizes_data_time_frame", "debug":0
+      },
+      {
+        "x":860, "y":47,
+        "deepPosition":false, "noCheckSize":true,
+        "width":260, "height":22, "align":"center", "alignV":"middle",
+        "font":{"size":12, "name":"t_rules_data_purp_font"}, "fill":"0xFAE339", "letterSpacing":0,
+        "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+        "locConst":"tournament_4", "type":"textBitmap", "name":"t_date", "debug":0
+      },
+
+      {
+        "x":1025, "y":61, "anchor":0.5, "scale":0.58,
+        "deepPosition":false, "noCheckSize":true,
+        "out":"pop_up/b_close_tur_0", "over":"pop_up/b_close_tur_1",
+        "down":"pop_up/b_close_tur_2", "block":"pop_up/b_close_tur_3",
+        "type":"button", "name":"b_close", "debug":0,
+        "oneClick":true, "soundUp":"t_btn_any", "soundOver":"btn_over",
+        "-hintAreaRect":{"x":0, "y":0, "width":10, "height":10, "type":0, "debug":0}
+      }
+    ]
+  },
+  "m_rules_window":{
+    "edit":0,
+    "x":0, "y":0, "sdx":0.5, "sdy":0.5,
+    "deepPosition":true,
+    "time_show":0.4, "time_hide":0.2,
+
+    "leaders":{
+      "x":0, "y":0,
+      "deepPosition":true,
+      "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+      "type":"container", "name":"c_tab_leaders", "debug":0,
+      "debugHitArea":false,
+      "debug_count":0,
+      "countMax":50,
+      "element":{
+        "x":57, "y":38,
+        "deepPosition":true,
+        "interactiveChildren":false, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_", "debug":0,
+        "entities":[
+          {
+            "x":14, "y":64,
+            "v_scale":0.465,
+            "deepPosition":false,
+            "type":"sprite", "texture":"leaderboard/leaderboard_lines",
+            "name":"s_leaderboard_lines", "debug":0
+          },
+          {
+            "x":37, "y":33, "anchor":0.5,
+            "deepPosition":false, "noCheckSize":true,
+            "places":{
+              "1":"leaderboard/leaderboard_medal_1",
+              "2":"leaderboard/leaderboard_medal_2",
+              "3":"leaderboard/leaderboard_medal_3",
+              "-":"leaderboard/leaderboard_medal_4"
+            },
+            "type":"sprite", "texture":"leaderboard/leaderboard_medal_1",
+            "name":"s_place", "debug":0,
+            "entities":[
+              {
+                "x":2, "y":-3,
+                "deepPosition":false, "noCheckSize":true,
+                "width":23, "height":19, "align":"center", "alignV":"middle",
+                "font":{"size":13, "name":"t_rules_number_2_font"}, "fill":"0xFFEBD7", "letterSpacing":-2,
+                "checkFontSize":false, "oneLine":true, "toUpperCase":false, "locCheck":false,
+                "text":"4", "type":"textBitmap", "name":"t_number", "debug":0
+              }
+            ]
+          },
+          {
+            "x":139, "y":22,
+            "v_x":88, "v_y":22, "v_width":272,
+            "deepPosition":false,
+            "width":355, "height":40, "align":"left", "alignV":"middle",
+            "fontSize":"16px", "fontName":"NimbusFont", "fill":"0x6D6871", "letterSpacing":0,
+            "leading":0, "checkFontSize":true, "oneLine":true, "toUpperCase":false,
+            "locCheck":false,
+            "text":"USER-129304556", "type":"textFont", "name":"t_name", "debug":0
+          },
+          {
+            "x":660, "y":25,
+            "v_x":363, "v_y":25, "v_width":135, "deepPosition":false,
+            "width":269, "height":40, "align":"left", "alignV":"middle",
+            "font":{"size":16, "name":"t_rules_number_1_font"}, "fill":"0x6D6871", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+            "text":"8.9874", "type":"textBitmap", "name":"t_points", "debug":0
+          },
+
+          {
+            "x":139, "y":45,
+            "v_x":88, "v_y":45, "v_width":272,
+            "deepPosition":false,
+            "width":355, "height":40, "align":"left", "alignV":"middle",
+            "font":{"size":16, "name":"t_rules1_font"}, "fill":"0x6D6871", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+            "locConst":"tournament_rules_player_3", "type":"textBitmap", "name":"t_tournament_rules_player_3", "debug":0,
+            "hin":{
+              "width":355, "height":40, "align":"left", "alignV":"middle",
+              "fontSize":"14px", "fontName":"Mangal", "fill":"0x6D6871", "letterSpacing":0,
+              "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          },
+          {
+            "x":660, "y":45,
+            "v_x":363, "v_y":45, "v_width":135, "deepPosition":false,
+            "width":269, "height":40, "align":"left", "alignV":"middle",
+            "font":{"size":16, "name":"t_rules1_font"}, "fill":"0x6D6871", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+            "locConst":"tournament_rules_player_4", "type":"textBitmap", "name":"t_tournament_rules_player_4", "debug":0,
+            "hin":{
+              "width":269, "height":40, "align":"left", "alignV":"middle",
+              "fontSize":"14px", "fontName":"Mangal", "fill":"0x6D6871", "letterSpacing":0,
+              "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          },
+
+          {
+            "x":1022, "y":9,
+            "deepPosition":false, "portrait":false,
+            "type":"sprite", "texture":"leaderboard/Leaderboard_gold_coin",
+            "name":"s_Leaderboard_gold_coin", "debug":0
+          },
+          {
+            "x":0, "y":0, "visible":false,
+            "v_x":0, "v_y":4, "deepPosition":false,
+            "type":"sprite", "texture":"leaderboard/leaderboard_line_2",
+            "v_texture":"port/leaderboard_line_2",
+            "name":"s_user", "debug":0
+          }
+        ]
+      },
+      "step":66,
+      "entities":[
+        {
+          "x":650, "y":362, "dx":0, "dy":0, "speed":1,
+          "v_x":281, "v_y":308, "v_scale":0.85, "deepPosition":false,
+          "play":true, "playLoop":true, "destroyOnKill":true,
+          "textures":"Turnament_Leaders", "custom_a_name":"animation", "name":"a_Turnament_Leaders",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":72, "y":260,
+          "v_x":-40, "v_y":240,
+          "interactiveChildren":true, "centered":false, "deepPosition":true,
+          "type":"container", "name":"c_page_content", "debug":0,
+          "entities":[
+            {
+              "x":76, "y":14,
+              "deepPosition":true, "v_x":311, "v_y":15, "v_align":"center", "v_width":486,
+              "width":592, "height":40, "align":"left", "alignV":"middle",
+              "font":{"size":22, "name":"t_rules2_font"}, "fill":"0x82888D", "letterSpacing":0,
+              "checkFontSize":false, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_player_2", "type":"textBitmap", "name":"t_tournament_rules_player_2", "debug":0,
+              "hin":{
+                "v_align":"center", "v_width":486,
+                "width":592, "height":40, "align":"left", "alignV":"middle",
+                "fontSize":"19px", "fontName":"Mangal", "fill":"0x82888D", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              }
+            }
+          ]
+        },
+        {
+          "x":0, "y":246,
+          "width":1279, "height":481,
+          "v_x":0, "v_y":235, "v_height":727,
+          "color":"0x000000", "alpha":1,
+          "deepPosition":false,
+          "type":"rect", "name":"r_content_mask", "debug":0, "edit":0
+        }
+      ]
+    },
+    "prizes":{
+      "x":0, "y":0,
+      "deepPosition":false, "noCheckSize":true,
+      "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+      "type":"container", "name":"c_tab_prizes", "debug":0,
+      "step":50, "v_step":34,
+      "element":{
+        "x":185, "y":425,
+        "v_x":62, "v_y":383, "v_scale":0.65,
+        "deepPosition":false,
+        "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_pos", "debug":0,
+        "entities":[
+          {
+            "x":1, "y":26, "scaleX":0.699,
+            "deepPosition":false, "noCheckSize":true,
+            "type":"sprite", "texture":"leaderboard/leaderboard_lines",
+            "name":"s_leaderboard_lines", "debug":0
+          },
+          {
+            "x":60, "y":6,
+            "deepPosition":false, "noCheckSize":true,
+            "width":230, "height":40, "align":"left", "alignV":"middle",
+            "font":{"size":23, "name":"t_rules_number_3_font"}, "fill":"0x232323",
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+            "text":"4.", "type":"textBitmap", "name":"t_place", "debug":0
+          },
+          {
+            "x":323, "y":2,
+            "deepPosition":false, "noCheckSize":true,
+            "width":341, "height":40, "align":"left", "alignV":"middle",
+            "font":{"size":29, "name":"t_rules_number_3_font"}, "fill":"0x232323",
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+            "text":"€5,000", "type":"textBitmap", "name":"t_value", "debug":0
+          },
+          {
+            "x":665, "y":-8, "scale":0.68,
+            "deepPosition":false, "noCheckSize":true,
+            "type":"sprite", "texture":"leaderboard/Leaderboard_gold_coin",
+            "name":"s_Leaderboard_gold_coin", "debug":0
+          }
+        ]
+      },
+      "debugHitArea":false, "debug_count":0,
+      "entities":[
+        {
+          "x":632, "y":366, "dx":0, "dy":0, "speed":1,
+          "v_x":254, "v_y":309, "v_scale":0.83,
+          "deepPosition":false,
+          "play":true, "playLoop":true,
+          "textures":"TStars_in_rules", "custom_a_name":"animation",
+          "name":"a_TStars_in_rules",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":640, "y":362, "dx":0, "dy":0, "speed":1,
+          "v_x":259, "v_y":303, "v_scale":0.81,
+          "deepPosition":false,
+          "play":true, "playLoop":true,
+          "textures":"TStrok", "custom_a_name":"animation",
+          "name":"a_TStrok",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":640, "y":161, "anchor":0.5,
+          "v_x":270, "v_y":141, "v_scale":0.82,
+          "deepPosition":false,
+          "type":"sprite", "texture":"prizes/prizes_cash_frame",
+          "name":"s_prizes_cash_frame", "debug":0
+        },
+
+        {
+          "x":640, "y":95,
+          "v_x":270, "v_y":90, "v_width":529, "v_fontSize":19,
+          "deepPosition":true,
+          "width":1018, "height":60, "align":"center", "alignV":"middle",
+          "font":{"size":26, "name":"t_start1_purp_font"},
+          "checkFontSize":true, "oneLine":false, "toUpperCase":false,
+          "text":"Book of Billionaire",
+          "type":"textBitmap", "name":"t_tournament_rules_prize_1", "debug":0,
+          "hin":{
+            "y":8,
+            "v_y":0,
+            "v_fontSize":17,
+            "width":1018, "height":60, "align":"center", "alignV":"middle",
+            "fontSize":"23px", "fontName":"Mangal",
+            "dropShadow":true,
+            "dropShadowDistance":1,
+            "dropShadowBlur":2,
+            "dropShadowColor":"#4d0000",
+            "padding":10,
+            "fill":[
+              "#fff49f",
+              "#ffe961"
+            ],
+            "fillGradientStops":[
+              0.2,
+              0.4,
+              0.5
+            ],
+            "lineJoin":"bevel",
+            "miterLimit":0,
+            "stroke":"#ce442c",
+            "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+            "type":"textFont", "debug":0
+          },
+          "locConfig":{
+            "jpn":{"fontSize":22, "v_fontSize":14}
+          }
+        },
+        {
+          "x":640, "y":154,
+          "v_x":270, "v_y":134, "v_width":442, "v_fontSize":25,
+          "deepPosition":true,
+          "width":544, "height":40, "align":"center", "alignV":"middle",
+          "font":{"size":28, "name":"t_rules3_font"},
+          "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+          "text":"tournament_rules_prize_3", "type":"textBitmap",
+          "name":"t_cashier", "debug":0,
+          "hin":{
+            "y":7, "v_fontSize":21,
+            "width":544, "height":40, "align":"center", "alignV":"middle",
+            "fontSize":"24px", "fontName":"Mangal",
+            "dropShadow":true,
+            "dropShadowAlpha":0.9,
+            "dropShadowAngle":-4.7,
+            "dropShadowColor":"#451c28",
+            "fill":[
+              "#fff4a3",
+              "#ffdb29"
+            ],
+            "fillGradientStops":[
+              0.2,
+              0.4,
+              0.5
+            ],
+            "lineJoin":"bevel",
+            "miterLimit":0,
+            "stroke":"#ce442c",
+            "leading":0, "checkFontSize":true, "oneLine":true, "toUpperCase":false,
+            "type":"textFont", "debug":0
+          },
+          "locConfig":{
+            "deu":{"dy":0.05},
+            "rus":{"dy":-0.05},
+            "ind":{"dy":0.05}
+          }
+        },
+
+        {
+          "x":72, "y":260,
+          "v_x":-40, "v_y":240,
+          "interactiveChildren":true, "centered":false, "deepPosition":true,
+          "type":"container", "name":"c_page_content", "debug":0,
+          "entities":[
+            {
+              "x":558, "y":134, "anchor":0.5,
+              "v_x":294, "v_y":68, "v_scale":0.49,
+              "deepPosition":false,
+              "type":"sprite", "texture":"prizes/prizes_confetti",
+              "name":"s_prizes_confetti", "debug":0
+            },
+            {
+              "x":527, "y":279, "anchor":0.5,
+              "v_x":299, "v_y":177, "v_scale":0.65,
+              "deepPosition":false,
+              "type":"sprite", "texture":"prizes/prizes_medal_gold_shadow",
+              "name":"s_prizes_medal_gold_shadow", "debug":0
+            },
+            {
+              "x":200, "y":349, "anchor":0.5,
+              "v_x":148, "v_y":331, "v_scale":0.5,
+              "deepPosition":false,
+              "type":"sprite", "texture":"prizes/prizes_medal_shadow",
+              "name":"s_prizes_medal_shadow1", "debug":0
+            },
+            {
+              "x":903, "y":317, "anchor":0.5, "scale":0.69,
+              "v_x":449, "v_y":321, "v_scale":0.53, "deepPosition":false,
+              "type":"sprite", "texture":"prizes/prizes_medal_shadow",
+              "name":"s_prizes_medal_shadow2", "debug":0
+            },
+
+            {
+              "x":570, "y":98, "dy":0, "speed":1,
+              "v_x":321, "v_y":61, "v_scale":0.64, "deepPosition":false,
+              "play":true, "playLoop":true,
+              "textures":"TWiner", "custom_a_name":"1", "name":"a_TWiner1",
+              "type":"actorSpine", "debug":0
+            },
+            {
+              "x":552, "y":115, "dy":0, "speed":1, "scale":0.96,
+              "v_x":391, "v_y":172, "v_scale":0.65, "deepPosition":false,
+              "play":true, "playLoop":true,
+              "textures":"TWiner", "custom_a_name":"2", "name":"a_TWiner2",
+              "type":"actorSpine", "debug":0
+            },
+            {
+              "x":582, "y":106, "dy":0, "speed":1, "scale":0.96,
+              "v_x":232, "v_y":180, "v_scale":0.66, "deepPosition":false,
+              "play":true, "playLoop":true,
+              "textures":"TWiner", "custom_a_name":"3", "name":"a_TWiner3",
+              "type":"actorSpine", "debug":0
+            },
+            {
+              "x":550, "y":156, "anchor":0.5,
+              "v_x":307, "v_y":99, "v_scale":0.65, "deepPosition":false,
+              "type":"sprite", "texture":"prizes/prizes_gold_medal",
+              "name":"s_prizes_gold_medal", "debug":0
+            },
+            {
+              "x":193, "y":255, "anchor":0.5,
+              "v_x":149, "v_y":269, "v_scale":0.65, "deepPosition":false,
+              "type":"sprite", "texture":"prizes/prizes_silver_medal",
+              "name":"s_prizes_silver_medal", "debug":0
+            },
+            {
+              "x":897, "y":241, "anchor":0.5,
+              "v_x":448, "v_y":273, "v_scale":0.65, "deepPosition":false,
+              "type":"sprite", "texture":"prizes/prizes_bronze_medal",
+              "name":"s_prizes_bronze_medal", "debug":0
+            },
+
+            {
+              "x":549, "y":10,
+              "deepPosition":true, "v_x":307, "v_y":5, "v_fontSize":19, "v_width":422,
+              "width":569, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":29, "name":"t_start2_font"}, "fill":"0x000000", "letterSpacing":0,
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_prize_7", "type":"textBitmap", "name":"t_tournament_rules_prize_7", "debug":0,
+              "hin":{
+                "v_y":5,
+                "v_fontSize":17,
+                "width":569, "height":40, "align":"center", "alignV":"middle",
+                "fontSize":"25px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "locConfig":{
+                "vie":{"dy":0.3},
+                "esp":{"dy":0.2}
+              }
+            },
+            {
+              "x":195, "y":137,
+              "deepPosition":true, "v_x":149, "v_y":188, "v_fontSize":19, "v_width":207,
+              "width":333, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":29, "name":"t_start2_font"}, "fill":"0x000000", "letterSpacing":0,
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_prize_8", "type":"textBitmap", "name":"t_tournament_rules_prize_8", "debug":0,
+              "hin":{
+                "v_fontSize":17,
+                "width":333, "height":40, "align":"center", "alignV":"middle",
+                "fontSize":"25px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "locConfig":{
+                "vie":{"dy":0.3},
+                "esp":{"dy":0.2}
+              }
+            },
+            {
+              "x":897, "y":140,
+              "deepPosition":true, "v_x":448, "v_y":200, "v_fontSize":19, "v_width":201,
+              "width":341, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":29, "name":"t_start2_font"}, "fill":"0x000000", "letterSpacing":0,
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_prize_9", "type":"textBitmap", "name":"t_tournament_rules_prize_9", "debug":0,
+              "hin":{
+                "v_fontSize":17,
+                "width":341, "height":40, "align":"center", "alignV":"middle",
+                "fontSize":"25px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "locConfig":{
+                "vie":{"dy":0.3},
+                "esp":{"dy":0.2}
+              }
+            },
+
+            {
+              "x":244, "y":384,
+              "deepPosition":true, "v_x":98, "v_y":357, "v_fontSize":13, "v_width":161,
+              "width":248, "height":40, "align":"left", "alignV":"middle",
+              "font":{"size":20, "name":"t_start2_font"}, "fill":"0x6E757C", "letterSpacing":0,
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_prize_5", "type":"textBitmap", "name":"t_tournament_rules_prize_5", "debug":0,
+              "hin":{
+                "v_fontSize":11,
+                "width":248, "height":40, "align":"left", "alignV":"middle",
+                "fontSize":"17px", "fontName":"Mangal", "fill":"0x6E757C", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              }
+            },
+            {
+              "x":509, "y":386,
+              "deepPosition":true, "v_x":272, "v_y":357, "v_fontSize":13, "v_width":268,
+              "width":418, "height":40, "align":"left", "alignV":"middle",
+              "font":{"size":20, "name":"t_start2_font"}, "fill":"0x6E757C", "letterSpacing":0,
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_prize_6", "type":"textBitmap", "name":"t_tournament_rules_prize_6", "debug":0,
+              "hin":{
+                "v_fontSize":11,
+                "width":418, "height":40, "align":"left", "alignV":"middle",
+                "fontSize":"17px", "fontName":"Mangal", "fill":"0x6E757C", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":true, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              }
+            },
+
+            {
+              "x":546, "y":236,
+              "v_x":305, "v_y":149, "v_width":135, "v_fontSize":25, "deepPosition":false,
+              "width":213, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":38, "name":"t_rules_number_4_font"},
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+              "text":"€10,000", "type":"textBitmap", "name":"t_1", "debug":0
+            },
+            {
+              "x":192, "y":316,
+              "v_x":149, "v_y":308, "v_width":115, "v_fontSize":23, "deepPosition":false,
+              "width":140, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":28, "name":"t_rules_number_5_font"},
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+              "text":"€8,000", "type":"textBitmap", "name":"t_2", "debug":0
+            },
+            {
+              "x":897, "y":289,
+              "v_x":449, "v_y":303, "v_width":80, "v_fontSize":18, "deepPosition":false,
+              "width":126, "height":40, "align":"center", "alignV":"middle",
+              "font":{"size":26, "name":"t_rules_number_6_font"},
+              "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":false,
+              "text":"€6,000", "type":"textBitmap", "name":"t_3", "debug":0
+            }
+          ]
+        },
+        {
+          "x":0, "y":246,
+          "width":1279, "height":481,
+          "v_x":0, "v_y":235, "v_height":727,
+          "color":"0x000000", "alpha":1,
+          "deepPosition":false,
+          "type":"rect", "name":"r_content_mask", "debug":0, "edit":0
+        }
+      ]
+    },
+    "rules":{
+      "x":0, "y":0,
+      "deepPosition":false, "noCheckSize":true,
+      "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+      "type":"container", "name":"c_tab_rules", "debug":1,
+      "debugHitArea":false,
+      "entities":[
+        {
+          "x":631, "y":354, "dx":0, "dy":0, "speed":1,
+          "v_x":259, "v_y":275, "v_scale":0.58, "deepPosition":false,
+          "play":true, "playLoop":true,
+          "textures":"TStar_rules", "custom_a_name":"animation", "name":"a_TStar_rules",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":640, "y":360, "dx":0, "dy":0, "speed":1,
+          "v_x":260, "v_y":240, "v_scale":0.55, "deepPosition":false,
+          "play":true, "playLoop":true,
+          "textures":"TDetal_B", "custom_a_name":"animation", "name":"a_TDetal_B",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":642, "y":344, "dx":0, "dy":0, "speed":1,
+          "v_x":149, "v_y":310, "v_scale":0.73, "deepPosition":false,
+          "play":true, "playLoop":true,
+          "textures":"TDetal", "custom_a_name":"animation", "name":"a_TDetal",
+          "type":"actorSpine", "debug":0
+        },
+        {
+          "x":638, "y":350, "dx":0, "dy":0, "speed":1,
+          "v_x":287, "v_y":275, "v_scale":0.56, "deepPosition":false,
+          "play":true, "playLoop":true,
+          "textures":"TDetal", "custom_a_name":"animation2", "name":"a_TDetal2",
+          "type":"actorSpine", "debug":0
+        },
+
+        {
+          "x":653, "y":110,
+          "v_x":270, "v_y":94, "v_width":346, "v_fontSize":49, "deepPosition":true,
+          "width":759, "height":117, "align":"center", "alignV":"middle",
+          "font":{"size":54, "name":"t_rules4_font"}, "letterSpacing":-4,
+          "checkFontSize":true, "oneLine":false, "toUpperCase":false, "locCheck":true,
+          "locConst":"tournament_rules_rules_3",
+          "type":"textBitmap", "name":"t_tournament_rules_rules_3", "debug":0,
+          "hin":{
+            "y":25, "v_y":25,
+            "v_width":346, "v_fontSize":45,
+            "width":759, "height":117, "align":"center", "alignV":"middle",
+            "fontSize":"50px", "fontName":"Mangal",
+            "dropShadow":true,
+            "dropShadowAlpha":0.9,
+            "dropShadowAngle":-4.7,
+            "dropShadowColor":"#1d1d1d",
+            "dropShadowDistance":3,
+            "padding":10,
+            "fill":[
+              "#ffca1d",
+              "#ff941a"
+            ],
+            "fillGradientStops":[
+              0.3,
+              1,
+              0.9
+            ],
+            "lineJoin":"bevel",
+            "miterLimit":0,
+            "stroke":"#ce442c",
+            "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+            "type":"textFont", "debug":0
+          },
+          "locConfig":{
+            "tha":{"v_fontSize":32}
+          }
+        },
+
+        {
+          "x":72, "y":260, "sdx":-0.5,
+          "v_x":-40, "v_y":240,
+          "interactiveChildren":true, "centered":false, "deepPosition":true,
+          "type":"container", "name":"c_page_content", "debug":0,
+          "entities":[
+            {
+              "x":0, "y":11,
+              "deepPosition":false, "noCheckSize":true,
+              "type":"sprite", "texture":"4x4",
+              "name":"s_4x4", "debug":0,
+              "format":true
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+              "text":"Book of Billionaire", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_4", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":46, "v_pos_dy":30,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "text":"tournament_rules_rules_5", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_5", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_6", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_6", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "text":"tournament_rules_rules_7", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_7", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "text":"tournament_rules_rules_8", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_8", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_9", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_9", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_10", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_10", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "text":"tournament_rules_rules_11", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_11", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_12", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_12", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_13", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_13", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_14", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_14", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_15", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_15", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_16", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_16", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_17", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_17", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_18", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_18", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_19", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_19", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_20", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_20", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "text":"tournament_rules_rules_21", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_21", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_22", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_22", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_23", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_23", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_24", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_24", "debug":0, "active":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_25", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_25", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_26", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_26", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":13, "y":0,
+              "v_x":64, "v_width":486, "v_fontSize":17, "deepPosition":true,
+              "width":1166, "height":98, "align":"left", "alignV":"top",
+              "font":{"size":25, "name":"t_rules1_font"}, "fill":"0x2C2D2E",
+              "checkFontSize":false, "oneLine":false, "toUpperCase":false, "locCheck":true,
+              "locConst":"tournament_rules_rules_27", "textBreak":true,
+              "type":"textBitmap", "name":"t_tournament_rules_rules_27", "debug":0,
+              "hin":{
+                "v_width":486, "v_fontSize":14,
+                "width":1166, "height":98, "align":"left", "alignV":"top",
+                "fontSize":"22px", "fontName":"Mangal", "fill":"0x2C2D2E", "letterSpacing":0,
+                "leading":0, "checkFontSize":false, "oneLine":false, "toUpperCase":false,
+                "type":"textFont", "debug":0
+              },
+              "format":true, "pos_dy":30, "v_pos_dy":20,
+              "locConfig":{
+                "jpn":{"fontSize":20, "v_fontSize":12},
+                "zh_cn":{"fontSize":20, "v_fontSize":12},
+                "zh_tw":{"fontSize":20, "v_fontSize":12},
+                "tha":{"fontSize":20, "v_fontSize":12}
+              }
+            },
+            {
+              "x":0, "y":11,
+              "deepPosition":false, "noCheckSize":true,
+              "type":"sprite", "texture":"4x4",
+              "name":"s_4x4", "debug":0,
+              "format":true, "pos_dy":50
+            }
+          ]
+        },
+        {
+          "x":0, "y":246, "sdx":-0.5,
+          "width":1279, "height":481,
+          "v_x":0, "v_y":235, "v_height":727,
+          "color":"0x000000", "alpha":1,
+          "deepPosition":false,
+          "type":"rect", "name":"r_content_mask", "debug":0, "edit":0
+        },
+
+        {
+          "x":640, "y":270, "anchor":0.5,
+          "v_x":270, "v_y":253, "v_scale":0.77, "deepPosition":false,
+          "type":"sprite", "texture":"rules/rules_plaska",
+          "name":"s_rules_plaska", "debug":0
+        },
+        {
+          "x":640, "y":273,
+          "v_x":270, "v_y":252, "v_width":438, "v_fontSize":17, "deepPosition":true,
+          "width":605, "height":41, "align":"center", "alignV":"middle",
+          "font":{"size":23, "name":"t_rules1_font"},
+          "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+          "text":"The minimum bet to qualify in the tournament is %s",
+          "type":"textBitmap", "name":"t_tournament_rules_rules_1", "debug":0,
+          "hin":{
+            "v_width":438,
+            "width":605, "height":41, "align":"center", "alignV":"middle",
+            "fontSize":"20px", "fontName":"Mangal", "fill":"0xffffff", "letterSpacing":0,
+            "leading":0, "checkFontSize":true, "oneLine":true, "toUpperCase":false,
+            "type":"textFont", "debug":0
+          }
+        }
+      ]
+    },
+    "entities":[
+      {
+        "x":0, "y":0, "sdx":-0.5, "sdy":-0.5,
+        "width":100, "height":100,
+        "color":"0xffffff", "alpha":1,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"rect", "name":"r_bg_down", "debug":0
+      },
+      {
+        "x":0, "y":0, "sdx":-0.5, "sdy":-0.5,
+        "height":246, "v_height":233,
+        "deepPosition":false, "noCheckSize":true,
+        "type":"sprite", "texture":"main_window/lederboard_back_frame",
+        "name":"s_bg_up", "debug":0
+      },
+      {
+        "x":0, "y":0,
+        "type":"sprite", "texture":"1_0002_Prizes_1.png",
+        "v_texture":"prisez_vert.png", "name":"preview",
+        "debug":0, "active":0
+      },
+      {
+        "x":0, "y":0, "sdx":-0.5, "sdy":-0.5,
+        "deepPosition":true,
+        "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_line_left", "debug":0,
+        "entities":[
+          {
+            "x":-53, "y":0, "scale":0.61,
+            "v_scale":0.38,
+            "deepPosition":false,
+            "type":"sprite", "texture":"main_window/lederboard_back_line",
+            "name":"s_lederboard_back_line1", "debug":0
+          },
+          {
+            "x":0, "y":0,
+            "v_x":16, "v_y":-54, "v_scaleX":0.516, "v_scaleY":1.007, "v_rotate":15,
+            "deepPosition":false,
+            "type":"sprite", "texture":"main_window/lederboard_back_line",
+            "name":"s_lederboard_back_line2", "debug":0
+          }
+        ]
+      },
+      {
+        "x":1280, "y":0, "scaleX":-1, "sdx":0.5, "sdy":-0.5,
+        "v_x":540, "v_y":0, "deepPosition":true,
+        "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_line_right", "debug":0,
+        "entities":[
+          {
+            "x":-53, "y":0, "scale":0.61,
+            "v_scale":0.38,
+            "deepPosition":false,
+            "type":"sprite", "texture":"main_window/lederboard_back_line",
+            "name":"s_lederboard_back_line1", "debug":0
+          },
+          {
+            "x":0, "y":0,
+            "v_x":16, "v_y":-54, "v_scaleX":0.516, "v_scaleY":1.007, "v_rotate":15,
+            "deepPosition":false,
+            "type":"sprite", "texture":"main_window/lederboard_back_line",
+            "name":"s_lederboard_back_line2", "debug":0
+          }
+        ]
+      },
+
+      {
+        "x":0, "y":0, "sdy":-0.5,
+        "deepPosition":false,
+        "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_tabs", "debug":0
+      },
+
+      {
+        "x":639, "y":362, "dx":0, "dy":0, "speed":1, "sdy":-0.5,
+        "v_x":270, "v_y":265, "v_scale":0.74,
+        "deepPosition":false,
+        "play":true, "playLoop":true,
+        "textures":"TTourn", "custom_a_name":"animation", "name":"a_TTourn",
+        "type":"actorSpine", "debug":0
+      },
+      {
+        "x":644, "y":38, "anchor":0.5, "sdy":-0.5,
+        "v_x":270, "v_y":25, "v_scale":0.68, "scale":0.9,
+        "deepPosition":false,
+        "type":"sprite", "texture":"4x4",
+        "name":"s_header", "debug":0,
+        "loc":{
+          "trn_eng":["eng", "gb", "can"],
+          "trn_deu":["deu"],
+          "trn_esp":["esp"],
+          "trn_fra":["fra"],
+          "trn_gre":["gre"],
+          "trn_hin":["hin"],
+          "trn_ind":["ind"],
+          "trn_ita":["ita"],
+          "trn_jpn":["jpn"],
+          "trn_kor":["kor"],
+          "trn_nor":["nor"],
+          "trn_pol":["pol"],
+          "trn_prt":["prt"],
+          "trn_ron":["ron"],
+          "trn_rus":["rus"],
+          "trn_swe":["swe"],
+          "trn_tha":["tha"],
+          "trn_tur":["tur"],
+          "trn_ukr":["ukr"],
+          "trn_vie":["vie"],
+          "trn_zh_cn":["zh_cn"],
+          "trn_zh_tw":["zh_tw"]
+        }
+      },
+
+      {
+        "x":159, "y":200, "sdy":-0.5,
+        "v_x":1, "v_y":198,
+        "deepPosition":false,
+        "type":"sprite", "texture":"main_window/prizes_slider_2",
+        "v_texture":"port/prizes_slider_2",
+        "name":"s_prizes_slider_2", "debug":0
+      },
+      {
+        "x":324, "y":224, "anchor":0.5, "sdy":-0.5,
+        "v_x":92, "v_y":217,
+        "deepPosition":true,
+        "type":"button", "out":"4x4", "userData":"b_leaders",
+        "debug":0, "name":"b_1",
+        "soundUp":"t_btn_any", "soundOver":"btn_over",
+        "entities":[
+          {
+            "x":0, "y":0, "anchor":0.5,
+            "v_texture":"port/prizes_slider_1",
+            "type":"sprite", "texture":"main_window/prizes_slider_1", "name":"s_active", "debug":0
+          },
+          {
+            "x":0, "y":1,
+            "deepPosition":true, "v_width":174, "v_fontSize":19,
+            "width":280, "height":46, "align":"center", "alignV":"middle",
+            "font":{"size":33, "name":"t_rules1_font"}, "fill":"0x000000", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+            "locConst":"tournament_rules_player_1", "type":"textBitmap", "name":"t_label", "debug":0,
+            "hin":{
+              "width":280, "height":46, "align":"center", "alignV":"middle",
+              "v_fontSize":22, "fontSize":"30px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+              "leading":0, "checkFontSize":true, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          }
+        ],
+        "hintAreaRect":{"x":-166, "y":-26, "width":331, "height":50, "type":0, "debug":0},
+        "v_hintAreaRect":{"x":-91, "y":-19, "width":182, "height":37, "type":0, "debug":0}
+      },
+      {
+        "x":640, "y":224, "anchor":0.5, "sdy":-0.5,
+        "v_x":270, "v_y":217,
+        "deepPosition":true,
+        "type":"button", "out":"4x4", "userData":"b_prizes",
+        "debug":0, "name":"b_2",
+        "soundUp":"t_btn_any", "soundOver":"btn_over",
+        "entities":[
+          {
+            "x":0, "y":0, "anchor":0.5,
+            "v_texture":"port/prizes_slider_1",
+            "type":"sprite", "texture":"main_window/prizes_slider_1", "name":"s_active", "debug":0
+          },
+          {
+            "x":0, "y":1,
+            "deepPosition":true, "v_width":174, "v_fontSize":19,
+            "width":280, "height":46, "align":"center", "alignV":"middle",
+            "font":{"size":33, "name":"t_rules1_font"}, "fill":"0x000000", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+            "locConst":"tournament_rules_prize_4", "type":"textBitmap", "name":"t_label", "debug":0,
+            "hin":{
+              "width":280, "height":46, "align":"center", "alignV":"middle",
+              "v_fontSize":22, "fontSize":"30px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+              "leading":0, "checkFontSize":true, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          }
+        ],
+        "hintAreaRect":{"x":-166, "y":-26, "width":331, "height":50, "type":0, "debug":0},
+        "v_hintAreaRect":{"x":-91, "y":-19, "width":182, "height":37, "type":0, "debug":0}
+      },
+      {
+        "x":956, "y":224, "anchor":0.5, "sdy":-0.5,
+        "v_x":448, "v_y":217,
+        "deepPosition":true,
+        "type":"button", "out":"4x4", "userData":"b_rules",
+        "debug":0, "name":"b_3",
+        "soundUp":"t_btn_any", "soundOver":"btn_over",
+        "entities":[
+          {
+            "x":0, "y":0, "anchor":0.5,
+            "v_texture":"port/prizes_slider_1",
+            "type":"sprite", "texture":"main_window/prizes_slider_1", "name":"s_active", "debug":0
+          },
+          {
+            "x":0, "y":1,
+            "deepPosition":true, "v_width":174, "v_fontSize":19,
+            "width":280, "height":46, "align":"center", "alignV":"middle",
+            "font":{"size":33, "name":"t_rules1_font"}, "fill":"0x000000", "letterSpacing":0,
+            "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+            "locConst":"tournament_rules_rules_2", "type":"textBitmap", "name":"t_label", "debug":0,
+            "hin":{
+              "width":280, "height":46, "align":"center", "alignV":"middle",
+              "v_fontSize":22, "fontSize":"30px", "fontName":"Mangal", "fill":"0x000000", "letterSpacing":0,
+              "leading":0, "checkFontSize":true, "oneLine":true, "toUpperCase":false,
+              "type":"textFont", "debug":0
+            }
+          }
+        ],
+        "hintAreaRect":{"x":-166, "y":-26, "width":331, "height":50, "type":0, "debug":0},
+        "v_hintAreaRect":{"x":-91, "y":-19, "width":182, "height":37, "type":0, "debug":0}
+      },
+
+      {
+        "x":1263, "y":255, "scale":0.66, "sdx":0.5,
+        "v_x":521, "v_y":260, "v_scale":1.0,
+        "deepPosition":false,
+        "interactiveChildren":true, "centered":false, "cacheAsBitmap":false,
+        "type":"container", "name":"c_scroll", "debug":0,
+        "entities":[
+          {
+            "x":0, "y":0, "rotate":0,
+            "type":"sprite", "texture":"main_window/prizes_slider_back", "name":"s_scroll_bg", "debug":0
+          },
+          {
+            "x":0, "y":0,
+            "minSlideValue":0, "maxSlideValue":486,
+            "type":"slider", "texture":"main_window/prizes_slider_3", "name":"sl_page_slider", "debug":0,
+            "hintAreaRect":{"x":-1, "y":0, "width":14, "height":193, "type":0, "debug":0}
+          }
+        ]
+      },
+
+      {
+        "x":843, "y":4, "sdx":0.5, "sdy":-0.5,
+        "v_x":104, "v_y":171, "v_scaleX":0.781, "v_scaleY":0.68,
+        "v_sdx":0,
+        "deepPosition":false,
+        "type":"sprite", "texture":"main_window/prizes_data_time_frame",
+        "name":"s_prizes_data_time_frame", "debug":0
+      },
+      {
+        "x":1055, "y":18, "sdx":0.5, "sdy":-0.5,
+        "v_sdx":0,
+        "v_x":270, "v_y":180, "v_width":324, "v_fontSize":16,
+        "deepPosition":true,
+        "width":413, "height":28, "align":"center", "alignV":"middle",
+        "font":{"size":20, "name":"t_rules_data_font"}, "fill":"0xffffff", "letterSpacing":0,
+        "checkFontSize":true, "oneLine":true, "toUpperCase":false, "locCheck":true,
+        "locConst":"tournament_4", "type":"textBitmap", "name":"t_date", "debug":0
+      },
+
+      {
+        "x":69, "y":59, "anchor":0.5, "scale":1.0,
+        "sdx":-0.5, "sdy":-0.5,
+        "v_x":37, "v_y":36, "v_scale":0.57,
+        "deepPosition":false,
+        "out":"leaderboard/leaderboard_arrow",
+        "type":"buttonMobile", "name":"b_close", "debug":0,
+        "oneClick":true, "soundUp":"t_btn_any",
+        "hintAreaRect":{"x":-45, "y":-42, "width":92, "height":86, "type":0, "debug":0}
+      }
+    ]
+  }
+}

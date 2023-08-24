@@ -1,0 +1,242 @@
+{
+  "main":[
+    {
+      "loader":"loadAtlas", "resolution":true, "name":"TLocal-eng-0", "file":"default/main/",
+      "locMap":{
+        "deu":"TLocal-deu-0",
+        "esp":"TLocal-esp-0",
+        "fra":"TLocal-fra-0",
+        "gre":"TLocal-gre-0",
+        "hin":"TLocal-hin-0",
+        "ind":"TLocal-ind-0",
+        "ita":"TLocal-ita-0",
+        "jpn":"TLocal-jpn-0",
+        "kor":"TLocal-kor-0",
+        "nor":"TLocal-nor-0",
+        "pol":"TLocal-pol-0",
+        "prt":"TLocal-prt-0",
+        "ron":"TLocal-ron-0",
+        "rus":"TLocal-rus-0",
+        "swe":"TLocal-swe-0",
+        "tha":"TLocal-tha-0",
+        "tur":"TLocal-tur-0",
+        "ukr":"TLocal-ukr-0",
+        "vie":"TLocal-vie-0",
+        "zh_cn":"TLocal-zh_cn-0",
+        "zh_tw":"TLocal-zh_tw-0"
+      }
+    },
+
+    {"loader":"loadSpine", "name":"TCoin", "file":"default/main/spine/"},
+    {"loader":"loadSpine", "name":"TCubk", "file":"default/main/spine/"},
+    {"loader":"loadSpine", "name":"TStar", "file":"default/main/spine/"},
+    {"loader":"loadSpine", "name":"TStars_final", "file":"default/main/spine/"},
+    {"loader":"loadSpine", "name":"TShine", "file":"default/main/spine/"},
+    {"loader":"loadSpine", "name":"TShine_start", "file":"default/main/spine/"},
+    {"loader":"loadSpine", "name":"T_cubе", "file":"default/main/spine/"},
+
+    {
+      "loader":"loadBitmapFont", "name":"t_start_number_font", "file":"fonts/"
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_start1_font", "file":"fonts/",
+      "locMap":{
+        "gre,rus,ukr,vie":"t_start1_font_gre",
+        "jpn":"t_start1_font_jpn",
+        "kor":"t_start1_font_kor",
+        "tha":"t_start1_font_tha",
+        "zh_cn,zh_tw":"t_start1_font_zh_cn"
+      },
+      "dyMap":{
+        "rus":-18,
+        "ukr":-18,
+        "vie":-18,
+        "gre":-18
+      },
+      "lineHeight":{
+        "t_start1_font_kor":18,
+        "t_start1_font_deu":18,
+        "t_start1_font_zh_cn":18,
+        "t_start1_font_zh_tw":18
+      }
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_start2_font", "file":"fonts/",
+      "locMap":{
+        "gre,rus,ukr,vie":"t_start2_font_gre",
+        "jpn":"t_start2_font_jpn",
+        "kor":"t_start2_font_kor",
+        "tha":"t_start2_font_tha",
+        "zh_cn,zh_tw":"t_start2_font_zh_cn"
+      },
+      "dyMap":{
+        "esp":-5,
+        "gre":-15,
+        "ukr":-12,
+        "rus":-12,
+        "vie":-18
+      }
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_final_font", "file":"fonts/",
+      "locMap":{
+        "gre,rus,ukr,vie":"t_final_font_gre",
+        "jpn":"t_final_font_jpn",
+        "kor":"t_final_font_kor",
+        "tha":"t_final_font_tha",
+        "zh_cn,zh_tw":"t_final_font_zh_cn"
+      }
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_rules_number_1_font", "file":"fonts/"
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_rules1_font", "file":"fonts/",
+      "locMap":{
+        "gre,rus,ukr,vie,ron":"t_rules1_font_gre",
+        "jpn":"t_rules1_font_jpn",
+        "kor":"t_rules1_font_kor",
+        "tha":"t_rules1_font_tha",
+        "zh_cn,zh_tw":"t_rules1_font_zh_cn"
+      },
+      "dyMap":{
+        "tha": 8,
+        "jpn": 6,
+        "zh_tw": 8,
+        "zh_cn": 8,
+        "kor": 8
+      },
+      "lineHeight":{
+        "t_rules1_font_kor":12,
+        "t_rules1_font_jpn":8,
+        "t_rules1_font_zh_cn":8
+      }
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_rules2_font", "file":"fonts/",
+      "locMap":{
+        "jpn":"t_rules2_font_jpn",
+        "kor":"t_rules2_font_kor",
+        "tha":"t_rules2_font_tha",
+        "zh_cn,zh_tw":"t_rules2_font_zh_cn"
+      }
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_rules3_font", "file":"fonts/",
+      "locMap":{
+        "gre,rus,ukr,vie":"t_rules3_font_gre",
+        "jpn":"t_rules3_font_jpn",
+        "kor":"t_rules3_font_kor",
+        "tha":"t_rules3_font_tha",
+        "zh_cn,zh_tw":"t_rules3_font_zh_cn"
+      },
+      "dyMap":{
+        "gre,rus,ukr,vie":-14,
+        "jpn":-3,
+        "kor":-4,
+        "tha":-3,
+        "zh_cn,zh_tw":-4
+      }
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_rules4_font", "file":"fonts/",
+      "locMap":{
+        "gre,rus,ukr,vie":"t_rules4_font_gre",
+        "jpn":"t_rules4_font_jpn",
+        "kor":"t_rules4_font_kor",
+        "tha":"t_rules4_font_tha",
+        "zh_cn,zh_tw":"t_rules4_font_zh_cn"
+      },
+      "dyMap":{
+        "vie":-25,
+        "gre":-10,
+        "ukr":-10,
+        "rus":-10,
+        "tha":-10
+      }
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_rules_number_2_font", "file":"fonts/"
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_rules_number_3_font", "file":"fonts/"
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_rules_number_4_font", "file":"fonts/"
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_rules_number_5_font", "file":"fonts/"
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_rules_number_6_font", "file":"fonts/"
+    }
+  ],
+  "desktop":[
+    {
+      "loader":"loadBitmapFont", "name":"t_rules_data_purp_font", "file":"fonts/",
+      "locMap":{
+        "rus,ukr":"t_rules_data_purp_font_ukr",
+        "kor":"t_rules_data_purp_font_kor"
+      },
+      "dyMap":{
+        "rus":-9,
+        "ukr":-9
+      }
+    },
+    {"loader":"loadAtlas", "resolution":true, "name":"TResources-0", "file":"default/themeMain/desktop/", "-noWebp":true},
+    {"loader":"loadSpine", "name":"TStars_in_rules", "file":"default/desktop/spine/"},
+    {"loader":"loadSpine", "name":"TStrok", "file":"default/desktop/spine/"},
+    {"loader":"loadSpine", "name":"TTourn", "file":"default/desktop/spine/"},
+    {"loader":"loadSpine", "name":"TWiner", "file":"default/desktop/spine/"},
+    {"loader":"loadSpine", "name":"Turnament_Leaders", "file":"default/desktop/spine/"},
+    {"loader":"loadSpine", "name":"TStar_rules", "file":"default/desktop/spine/"},
+    {"loader":"loadSpine", "name":"TDetal_B", "file":"default/desktop/spine/"},
+    {"loader":"loadSpine", "name":"TDetal", "file":"default/desktop/spine/"}
+  ],
+  "mobile":[
+    {
+      "loader":"loadBitmapFont", "name":"t_rules_data_font", "file":"fonts/",
+      "locMap":{
+        "rus,ukr":"t_rules_data_font_ukr",
+        "kor":"t_rules_data_font_kor"
+      },
+      "dyMap":{
+        "rus":-9,
+        "ukr":-9
+      }
+    },
+    {
+      "loader":"loadBitmapFont", "name":"t_start1_purp_font", "file":"fonts/",
+      "locMap":{
+        "gre,rus,ukr,vie":"t_start1_purp_font_gre",
+        "jpn":"t_start1_purp_font_jpn",
+        "kor":"t_start1_purp_font_kor",
+        "tha":"t_start1_purp_font_tha",
+        "zh_cn,zh_tw":"t_start1_purp_font_zh_cn"
+      },
+      "dyMap":{
+        "rus":-18,
+        "ukr":-18,
+        "vie":-18,
+        "gre":-18
+      },
+      "lineHeight":{
+        "t_start1_purp_font_kor":18,
+        "t_start1_purp_font_deu":18,
+        "t_start1_purp_font_zh_cn":18,
+        "t_start1_purp_font_zh_tw":18
+      }
+    },
+    {"loader":"loadAtlas", "resolution":true, "name":"TResources-0", "file":"default/themeMain/mobile/", "-noWebp":true},
+    {"loader":"loadSpine", "name":"TStars_in_rules", "file":"default/mobile/spine/"},
+    {"loader":"loadSpine", "name":"TStrok", "file":"default/mobile/spine/"},
+    {"loader":"loadSpine", "name":"TTourn", "file":"default/mobile/spine/"},
+    {"loader":"loadSpine", "name":"TWiner", "file":"default/mobile/spine/"},
+    {"loader":"loadSpine", "name":"Turnament_Leaders", "file":"default/mobile/spine/"},
+    {"loader":"loadSpine", "name":"TStar_rules", "file":"default/mobile/spine/"},
+    {"loader":"loadSpine", "name":"TDetal_B", "file":"default/mobile/spine/"},
+    {"loader":"loadSpine", "name":"TDetal", "file":"default/mobile/spine/"}
+  ],
+  "sound":[
+  ]
+}

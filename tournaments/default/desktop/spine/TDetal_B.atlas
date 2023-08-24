@@ -1,0 +1,19 @@
+TDetal_B.png
+size:54,166
+filter:Linear,Linear
+Layer 40 copy
+bounds:2,47,43,38
+offsets:0,1,43,40
+Layer 43
+bounds:2,143,24,21
+offsets:0,0,24,22
+Layer 43 copy
+bounds:2,2,43,44
+offsets:1,1,44,46
+rotate:90
+Layer 43 copy 2
+bounds:28,123,24,41
+offsets:0,0,24,42
+Layer 47
+bounds:2,87,50,34
+offsets:1,0,52,34

@@ -1,0 +1,28 @@
+{"frames": {
+
+"trn_ron":
+{
+	"frame": {"x":1,"y":1,"w":143,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":143,"h":34},
+	"sourceSize": {"w":143,"h":34}
+},
+"trn_white_ron":
+{
+	"frame": {"x":1,"y":37,"w":88,"h":20},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":88,"h":20},
+	"sourceSize": {"w":88,"h":20}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "TLocal-ron-0@1.125.png",
+	"format": "RGBA8888",
+	"size": {"w":145,"h":58},
+	"scale": "0.75",
+	"smartupdate": "$TexturePacker:SmartUpdate:d93e9fddce270d88c442795fe7faffb5:ab8b46e853f33d8a83142099991e5e6d:88ba93754ca2f15b83e68643b3d95090$"
+}
+}

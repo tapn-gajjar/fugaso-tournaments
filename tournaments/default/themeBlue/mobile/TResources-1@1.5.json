@@ -1,0 +1,85 @@
+{"frames": {
+
+"main_window/lederboard_back_frame":
+{
+	"frame": {"x":1,"y":1521,"w":384,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":384,"h":216},
+	"sourceSize": {"w":384,"h":216}
+},
+"main_window/lederboard_back_line":
+{
+	"frame": {"x":1,"y":1130,"w":519,"h":389},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":519,"h":389},
+	"sourceSize": {"w":519,"h":389}
+},
+"pop_up/b_pop_up_check_ou3":
+{
+	"frame": {"x":1,"y":1,"w":593,"h":379},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":593,"h":379},
+	"sourceSize": {"w":593,"h":379}
+},
+"pop_up/b_pop_up_check_out_0":
+{
+	"frame": {"x":596,"y":1,"w":593,"h":379},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":593,"h":379},
+	"sourceSize": {"w":593,"h":379}
+},
+"pop_up/b_pop_up_check_out_1":
+{
+	"frame": {"x":1,"y":382,"w":593,"h":379},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":593,"h":379},
+	"sourceSize": {"w":593,"h":379}
+},
+"pop_up/b_pop_up_check_out_2":
+{
+	"frame": {"x":596,"y":596,"w":593,"h":379},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":593,"h":379},
+	"sourceSize": {"w":593,"h":379}
+},
+"prizes/prizes_bronze_medal":
+{
+	"frame": {"x":522,"y":1470,"w":341,"h":218},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":341,"h":218},
+	"sourceSize": {"w":341,"h":218}
+},
+"prizes/prizes_gold_medal":
+{
+	"frame": {"x":1,"y":763,"w":583,"h":365},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":583,"h":365},
+	"sourceSize": {"w":583,"h":365}
+},
+"prizes/prizes_silver_medal":
+{
+	"frame": {"x":522,"y":1191,"w":450,"h":277},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":450,"h":277},
+	"sourceSize": {"w":450,"h":277}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "TResources-1@1.5.png",
+	"format": "RGBA8888",
+	"size": {"w":976,"h":1738},
+	"scale": "1",
+	"related_multi_packs": [ "TResources-0@1.5.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:1977aada9eafd8155ad1fb97a007a41c:b59d6d407b6ed0dee3594e3b699721a5:d3652fd72a11e9a3d23a47a3aa115f15$"
+}
+}

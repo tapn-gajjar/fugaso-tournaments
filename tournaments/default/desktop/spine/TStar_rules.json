@@ -1,0 +1,51 @@
+{
+"skeleton": { "hash": "OyCwjg4fNRk", "spine": "4.1.17", "x": -462.3, "y": 135.52, "width": 952, "height": 163 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": 40, "y": -157.09 },
+	{ "name": "Shine", "parent": "bone", "x": -96.07, "y": 395.23 }
+],
+"slots": [
+	{ "name": "Layer 48", "bone": "Shine", "attachment": "Layer 48" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Layer 48": {
+				"Layer 48": { "x": 69.77, "y": -21.13, "width": 952, "height": 163 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"Layer 48": {
+				"rgba": [
+					{
+						"color": "ffffffff",
+						"curve": [ 0.222, 1, 0.444, 1, 0.222, 1, 0.444, 1, 0.222, 1, 0.444, 1, 0.222, 1, 0.444, 0.39 ]
+					},
+					{
+						"time": 0.6667,
+						"color": "ffffff64",
+						"curve": [ 0.889, 1, 1.111, 1, 0.889, 1, 1.111, 1, 0.889, 1, 1.111, 1, 0.889, 0.39, 1.111, 1 ]
+					},
+					{
+						"time": 1.3333,
+						"color": "ffffffff",
+						"curve": [ 1.556, 1, 1.778, 1, 1.556, 1, 1.778, 1, 1.556, 1, 1.778, 1, 1.556, 1, 1.778, 0.39 ]
+					},
+					{
+						"time": 2,
+						"color": "ffffff64",
+						"curve": [ 2.222, 1, 2.444, 1, 2.222, 1, 2.444, 1, 2.222, 1, 2.444, 1, 2.222, 0.39, 2.444, 1 ]
+					},
+					{ "time": 2.6667, "color": "ffffffff" }
+				]
+			}
+		}
+	}
+}
+}

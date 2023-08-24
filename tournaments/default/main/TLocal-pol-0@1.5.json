@@ -1,0 +1,28 @@
+{"frames": {
+
+"trn_pol":
+{
+	"frame": {"x":1,"y":1,"w":189,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":189,"h":45},
+	"sourceSize": {"w":189,"h":45}
+},
+"trn_white_pol":
+{
+	"frame": {"x":192,"y":1,"w":114,"h":27},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":114,"h":27},
+	"sourceSize": {"w":114,"h":27}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "TLocal-pol-0@1.5.png",
+	"format": "RGBA8888",
+	"size": {"w":307,"h":47},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2199f7a48b2a43d8d9d83ec3041db18c:04293c02597349a14e324461513c88dc:78952d154816d251d444e5e1dad62714$"
+}
+}

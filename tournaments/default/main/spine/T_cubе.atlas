@@ -1,0 +1,23 @@
+T_cubе.png
+size:451,194
+filter:Linear,Linear
+Layer 2
+bounds:343,101,91,91
+offsets:2,2,95,95
+Layer 3
+bounds:387,30,69,62
+offsets:2,2,73,66
+rotate:90
+Layer 4
+bounds:343,78,21,21
+offsets:2,2,25,25
+gb_glow
+bounds:2,2,190,190
+offsets:0,10,200,210
+prt_star
+bounds:194,61,131,147
+offsets:1,0,133,148
+rotate:90
+spark
+bounds:194,18,191,41
+offsets:12,8,214,57

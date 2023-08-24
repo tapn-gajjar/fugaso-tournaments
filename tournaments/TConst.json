@@ -1,0 +1,72 @@
+{
+  "theme": {
+    "default/themeMain": {"loader":"loadJson", "name":"MainElements", "file":""},
+    "default/themeBlue": {"loader":"loadJson", "name":"MainElements", "file":""},
+    "default/themePurple": {"loader":"loadJson", "name":"MainElements", "file":""},
+    "default/themeYellow": {"loader":"loadJson", "name":"MainElements", "file":""}
+  },
+  "t_start1_font_config":{
+    "style":{
+      "fontFamily":"Prompt-Bold",
+      "dropShadow":true,
+      "dropShadowAlpha":0.9,
+      "dropShadowAngle":-4.7,
+      "dropShadowColor":"#4d0000",
+      "dropShadowDistance":4,
+      "fill":[
+        "#fff49f",
+        "#ffe961"
+      ],
+      "fillGradientStops":[
+        0.2,
+        0.4,
+        0.5
+      ],
+      "lineJoin":"bevel",
+      "miterLimit":0,
+      "stroke":"#ce442c",
+      "leading":0
+    },
+    "yOffset":12,
+    "yOffsetMap":{
+      "gre,rus,ukr,vie":-10,
+      "jpn":9,
+      "kor":12,
+      "tha":6,
+      "zh_cn,zh_tw":9
+    },
+    "-xOffset":0,
+    "-xOffsetMap":{
+
+    },
+    "-kerning":{},
+    "-kerningMap":{
+
+    },
+    "-resolution":1, "-padding":4
+  },
+  "t_rules1_font_config":{
+    "style":{
+      "fontFamily":"NimbusFont",
+      "fill":"0xffffff",
+      "leading":0
+    },
+    "yOffset":-10,
+    "yOffsetMap":{
+      "gre,rus,ukr,vie":-7,
+      "jpn":6,
+      "kor":8,
+      "tha":6,
+      "zh_cn,zh_tw":6
+    },
+    "-xOffset":0,
+    "-xOffsetMap":{
+
+    },
+    "-kerning":{},
+    "-kerningMap":{
+
+    },
+    "-resolution":1, "-padding":4
+  }
+}

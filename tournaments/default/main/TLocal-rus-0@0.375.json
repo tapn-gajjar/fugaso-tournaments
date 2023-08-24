@@ -1,0 +1,28 @@
+{"frames": {
+
+"trn_rus":
+{
+	"frame": {"x":1,"y":1,"w":46,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":46,"h":11},
+	"sourceSize": {"w":46,"h":11}
+},
+"trn_white_rus":
+{
+	"frame": {"x":49,"y":1,"w":28,"h":7},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":7},
+	"sourceSize": {"w":28,"h":7}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "TLocal-rus-0@0.375.png",
+	"format": "RGBA8888",
+	"size": {"w":78,"h":13},
+	"scale": "0.25",
+	"smartupdate": "$TexturePacker:SmartUpdate:b18dd8985eb3904a87f9a7f08bce9e6b:cd6f8911bee9509d4333e0f994682298:19fee0d7e56fe194a2882fbd8f3830bd$"
+}
+}

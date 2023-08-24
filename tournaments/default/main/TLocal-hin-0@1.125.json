@@ -1,0 +1,28 @@
+{"frames": {
+
+"trn_hin":
+{
+	"frame": {"x":30,"y":1,"w":94,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":94,"h":46},
+	"sourceSize": {"w":94,"h":46}
+},
+"trn_white_hin":
+{
+	"frame": {"x":1,"y":1,"w":57,"h":27},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":57,"h":27},
+	"sourceSize": {"w":57,"h":27}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "TLocal-hin-0@1.125.png",
+	"format": "RGBA8888",
+	"size": {"w":125,"h":59},
+	"scale": "0.75",
+	"smartupdate": "$TexturePacker:SmartUpdate:2500fa995f752d946ed1be696b653eb8:a858e6497b3a61b86000e9111ab82485:251baa8cad5e9ef71d06072ad7cee7d9$"
+}
+}
